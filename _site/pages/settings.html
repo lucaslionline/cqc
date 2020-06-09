@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+
+	<title>健康建筑认证管理平台 | 个人中心</title>
+	
+
+	<link rel="stylesheet" type="text/css" href="/cqc/assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/cqc/assets/css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="/cqc/assets/css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="/cqc/assets/css/custom.css">
+
+	
+	<script src="/cqc/assets/js/echarts.js"></script>
+	<script src="/cqc/assets/js/dataTool.js"></script>
+	<script src="/cqc/assets/js/china.js"></script>
+</head>
+
+</head>
+
+<body>
+	<header>
+	<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/cqc/">
+			<span data-feather="airplay"></span>
+			健康建筑认证管理平台
+		</a>
+		<input class="form-control form-control-dark w-100" type="text" placeholder="搜索" aria-label="Search">
+		<ul class="navbar-nav px-3">
+			<li class="nav-item text-nowrap">
+				<a class="nav-link" href="/cqc/pages/login.html">退出</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+	<div class="sidebar-sticky">
+		<ul class="nav flex-column">
+			<li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/dashboard.html">
+					<i data-feather="home"></i>
+					首页 <span class="sr-only">(current)</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/new-info.html">
+					<i data-feather="plus-square"></i>
+					新建项目
+				</a>
+			</li>
+			
+			<!--li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/analysis.html">
+					<i data-feather="pie-chart"></i>
+					分析
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/report.html">
+					<i data-feather="file-text"></i>
+					报告
+				</a>
+			</li-->
+		</ul>
+
+		<!--h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+			<span>数据库</span>
+			<a class="d-flex align-items-center text-muted" href="#">
+				<i data-feather="plus-circle"></i>
+			</a>
+		</h6-->
+		<ul class="nav flex-column mb-2">
+			<li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/projects.html">
+					<i data-feather="database"></i>
+					项目管理
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/users.html">
+					<i data-feather="users"></i>
+					用户管理
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/settings.html">
+					<i data-feather="settings"></i>
+					个人中心
+				</a>
+			</li>
+			<!--li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/questions.html">
+					<i data-feather="database"></i>
+					证书库
+				</a>
+			</li-->
+		</ul>
+	</div>
+</nav>
+
+			<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+				<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+	<h2>个人中心</h2>
+</div>
+
+
+
+
+
+<div class="row">
+	<div class="col-6">
+		<h6><span data-feather="user"></span> 修改用户信息</h6>
+
+		<form>
+			<label>用户名</label>
+			<input type="text" class="form-control mb-2" placeholder="Username">
+			<label>手机号</label>
+			<input type="text" class="form-control mb-2" placeholder="Phone">
+			<label>邮箱</label>
+			<input type="email" class="form-control mb-2" placeholder="Email">
+			<label>公司</label>
+			<input type="text" class="form-control mb-2" placeholder="Organization">
+
+			<button class="btn btn-sm btn-primary" type="submit">确认修改</button>
+		</form>
+	</div>
+
+
+
+
+
+
+
+
+	<div class="col-6">
+		<h6><i data-feather="lock"></i> 修改密码</h6>
+		
+		<form>
+			<label>原始密码</label>
+			<input type="password" class="form-control mb-2" placeholder="">
+			<label>新密码</label>
+			<input type="password" class="form-control mb-2" placeholder="">
+			<label>确认新密码</label>
+			<input type="password" class="form-control mb-2" placeholder="">
+
+			<button class="btn btn-sm btn-primary" type="submit">确认修改</button>
+		</form>
+	</div>
+</div>
+
+				<hr>
+<footer class="small gray">
+	<p>
+		<span>&copy;</span>
+		<span><script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+		中国质量认证中心 版权所有
+	</p>
+</footer>
+
+
+<script src="/cqc/assets/js/jquery-3.2.1.slim.min.js"></script>
+<script src="/cqc/assets/js/jquery-1.11.3.js"></script>
+<script src="/cqc/assets/js/popper.min.js"></script>
+<script src="/cqc/assets/js/bootstrap.min.js"></script>
+<script src="/cqc/assets/js/feather.min.js"></script>
+<script>
+feather.replace()
+</script>
+			</main>
+		</div>
+	</div>
+</body>
+</html>

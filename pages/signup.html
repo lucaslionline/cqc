@@ -1,0 +1,48 @@
+---
+title: "注册"
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include head.html %}
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/signin.css">
+</head>
+
+<body style="background: url({{ site.baseurl }}/assets/img/cover3.jpg) center center; background-size: cover; background-attachment: fixed;">
+	<div class="sign-convas">
+		<center>
+			<h4 style="letter-spacing: 0.2em; margin: 0.5em;">中国质量认证中心</h4>
+			<h2 style="letter-spacing: 0.2em; margin: 0.5em">健康建筑运行认证管理平台</h2>
+			<h4 style="letter-spacing: 0.2em; margin: 0.5em;">用户注册</h4>
+			<p class="gray">这个账号用来申请和管理您的健康建筑项目</p>
+		</center>
+
+
+		<form role="form" action="{{ site.baseurl }}/pages/login.html">
+			<div class="row">
+				<div class="col-md-6">
+					<input type="text" class="form-control" placeholder="用户名" autofocus>
+					<br>
+					<input type="password" class="form-control" placeholder="密码">
+					<br>
+					<input type="text" class="form-control" placeholder="手机号">
+				</div>
+
+				<div class="col-md-6">
+					<input type="email" class="form-control" placeholder="邮箱">
+					<br>
+					<input type="password" class="form-control" placeholder="确认密码">
+					<br>
+					<input type="text" class="form-control" placeholder="公司">
+				</div>
+			</div>
+			<br>
+			<button class="btn btn-sm btn-primary btn-block" type="submit">创建账号</button>
+		</form>
+		
+		<center>{% include footer.html %}</center>
+	</div>
+</body>
+</html>

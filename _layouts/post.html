@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% include head.html %}
+</head>
+
+<body>
+	<div style="width: 100%; height: 300px; background: url({{ site.baseurl }}/assets/img/{{ page.pic }}.jpg) center center; background-size: cover; background-attachment: fixed;">
+		<div class="cover-head">
+			<div class="btn-group">
+				<a href="{{ site.baseurl }}/" class="btn btn-sm btn-light"><i data-feather="home"></i> 首页</a>
+
+				<a href="{{ site.baseurl }}/pages/map.html" class="btn btn-sm btn-light"><i data-feather="map-pin"></i> 地图</a>
+
+				<a href="{{ site.baseurl }}/pages/list.html" class="btn btn-sm btn-light"><i data-feather="list"></i> 列表</a>
+			</div>
+
+			<div class="btn-group">
+				<a href="{{ site.baseurl }}/pages/login.html" class="btn btn-sm btn-outline-light"><i data-feather="log-in"></i> 登录</a>
+
+				<a href="{{ site.baseurl }}/pages/signup.html" class="btn btn-sm btn-outline-light"><i data-feather="user"></i> 注册</a>
+			</div>
+		</div>
+
+		<div class="container" style="color: white;">
+			<h1 style="letter-spacing: 0.1em; text-shadow: 0 0 10px black; margin-top: 3em;">{{ page.title }}</h1>
+		</div>
+	</div>
+
+
+	<div class="container">
+		{{ content }}
+	</div>
+
+
+	<center>
+		{% include footer.html %}
+	</center>
+</body>
+</html>

@@ -1,0 +1,109 @@
+---
+layout: default
+title: "用户管理"
+---
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+	<h2>{{ page.title }}</h2>
+</div>
+
+<p>
+	<div class="input-group">
+		<input type="text" class="form-control" placeholder="输入用户名查询">
+		<div class="input-group-append">
+			<button type="submit" class="btn btn-primary"><i data-feather="search"></i> 查询</button>
+		</div>
+	</div>
+</p>
+
+<div class="table-responsive">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>用户名</th>
+				<th>密码</th>
+				<th>角色</th>
+				<th>权限</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>username1</td>
+				<td>password1</td>
+				<td>普通用户</td>
+				<td>
+					<input type="checkbox" checked> 材料提交
+					<input type="checkbox"> 评审意见
+					<input type="checkbox"> 数据录入
+				</td>
+				<td>
+					<button class="btn btn-sm btn-primary">保存</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>username2</td>
+				<td>password2</td>
+				<td>专家评审</td>
+				<td>
+					<input type="checkbox"> 材料提交
+					<input type="checkbox" checked> 评审意见
+					<input type="checkbox"> 数据录入
+				</td>
+				<td>
+					<button class="btn btn-sm btn-primary">保存</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>username3</td>
+				<td>password3</td>
+				<td>数据操作员</td>
+				<td>
+					<input type="checkbox"> 材料提交
+					<input type="checkbox"> 评审意见
+					<input type="checkbox" checked> 数据录入
+				</td>
+				<td>
+					<button class="btn btn-sm btn-primary">保存</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>username4</td>
+				<td>password4</td>
+				<td>普通用户</td>
+				<td>
+					<input type="checkbox" checked> 材料提交
+					<input type="checkbox"> 评审意见
+					<input type="checkbox"> 数据录入
+				</td>
+				<td>
+					<button class="btn btn-sm btn-primary">保存</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>username5</td>
+				<td>password5</td>
+				<td>普通用户</td>
+				<td>
+					<input type="checkbox" checked> 材料提交
+					<input type="checkbox"> 评审意见
+					<input type="checkbox"> 数据录入
+				</td>
+				<td>
+					<button class="btn btn-sm btn-primary">保存</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<button class="btn btn-sm btn-primary"><i data-feather="plus-circle"></i> 新增</button>
+</div>

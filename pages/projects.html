@@ -1,0 +1,99 @@
+---
+layout: default
+title: "项目管理"
+---
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+	<h2>{{ page.title }}</h2>
+</div>
+
+<p>
+	<div class="input-group">
+		<input type="text" class="form-control" placeholder="输入项目名称或ID查询">
+		<div class="input-group-append">
+			<button type="submit" class="btn btn-primary"><i data-feather="search"></i> 查询</button>
+		</div>
+	</div>
+</p>
+
+<div class="table-responsive">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>项目ID</th>
+				<th>项目名称</th>
+				<th>项目状态</th>
+				<th>证书编号</th>
+				<th>业主名称</th>
+				<th>创建日期</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>001</td>
+				<td>健康建筑示例一</td>
+				<td class="warning">认证中</td>
+				<td>无</td>
+				<td>xxx公司</td>
+				<td>2020-05-31</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='{{ site.baseurl }}/pages/details.html'">查看</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>002</td>
+				<td>健康建筑示例二</td>
+				<td class="success">已认证</td>
+				<td>CQCJKJZ2020060102</td>
+				<td>xxx公司</td>
+				<td>2020-05-31</td>
+				<td>
+					<button class="btn btn-sm btn-primary" onclick="javascript:window.location.href='{{ site.baseurl }}/pages/details2.html'">查看</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>003</td>
+				<td>健康建筑示例三</td>
+				<td class="danger">已过期</td>
+				<td>无</td>
+				<td>xxx公司</td>
+				<td>2020-05-31</td>
+				<td>
+					<button class="btn btn-sm btn-primary">查看</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>004</td>
+				<td>健康建筑示例四</td>
+				<td class="success">已认证</td>
+				<td>CQCJKJZ2020060103</td>
+				<td>xxx公司</td>
+				<td>2020-05-31</td>
+				<td>
+					<button class="btn btn-sm btn-primary">查看</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>005</td>
+				<td>健康建筑示例五</td>
+				<td class="success">已认证</td>
+				<td>CQCJKJZ2020060104</td>
+				<td>xxx公司</td>
+				<td>2020-05-31</td>
+				<td>
+					<button class="btn btn-sm btn-primary">查看</button>
+					<button class="btn btn-sm btn-outline-primary">删除</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

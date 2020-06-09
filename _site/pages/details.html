@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+
+	<title>健康建筑认证管理平台 | 健康建筑示例</title>
+	
+
+	<link rel="stylesheet" type="text/css" href="/cqc/assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/cqc/assets/css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="/cqc/assets/css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="/cqc/assets/css/custom.css">
+
+	
+	<script src="/cqc/assets/js/echarts.js"></script>
+	<script src="/cqc/assets/js/dataTool.js"></script>
+	<script src="/cqc/assets/js/china.js"></script>
+</head>
+
+</head>
+
+<body>
+	<header>
+	<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/cqc/">
+			<span data-feather="airplay"></span>
+			健康建筑认证管理平台
+		</a>
+		<input class="form-control form-control-dark w-100" type="text" placeholder="搜索" aria-label="Search">
+		<ul class="navbar-nav px-3">
+			<li class="nav-item text-nowrap">
+				<a class="nav-link" href="/cqc/pages/login.html">退出</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+	<div class="sidebar-sticky">
+		<ul class="nav flex-column">
+			<li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/dashboard.html">
+					<i data-feather="home"></i>
+					首页 <span class="sr-only">(current)</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/new-info.html">
+					<i data-feather="plus-square"></i>
+					新建项目
+				</a>
+			</li>
+			
+			<!--li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/analysis.html">
+					<i data-feather="pie-chart"></i>
+					分析
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/report.html">
+					<i data-feather="file-text"></i>
+					报告
+				</a>
+			</li-->
+		</ul>
+
+		<!--h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+			<span>数据库</span>
+			<a class="d-flex align-items-center text-muted" href="#">
+				<i data-feather="plus-circle"></i>
+			</a>
+		</h6-->
+		<ul class="nav flex-column mb-2">
+			<li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/projects.html">
+					<i data-feather="database"></i>
+					项目管理
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/users.html">
+					<i data-feather="users"></i>
+					用户管理
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/settings.html">
+					<i data-feather="settings"></i>
+					个人中心
+				</a>
+			</li>
+			<!--li class="nav-item">
+				<a class="nav-link " href="/cqc/pages/questions.html">
+					<i data-feather="database"></i>
+					证书库
+				</a>
+			</li-->
+		</ul>
+	</div>
+</nav>
+
+			<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+				<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+	<h2>健康建筑示例</h2>
+</div>
+
+
+<ul class="nav nav-tabs" role="tablist" style="margin-bottom: 1em;">
+	<li class="nav-item" role="presentation">
+		<a class="nav-link active" id="basic-tab" data-toggle="tab" href="#basic" role="tab" aria-controls="basic" aria-selected="true">
+			<i data-feather="info"></i> 基本信息
+		</a>
+	</li>
+	<li class="nav-item" role="presentation">
+		<a class="nav-link" id="data-tab" data-toggle="tab" href="#data" role="tab" aria-controls="data" aria-selected="false">
+			<i data-feather="bar-chart-2"></i> 数据检测
+		</a>
+	</li>
+	<li class="nav-item" role="presentation">
+		<a class="nav-link" id="status-tab" data-toggle="tab" href="#status" role="tab" aria-controls="status" aria-selected="false">
+			<i data-feather="activity"></i> 认证状态
+		</a>
+	</li>
+</ul>
+
+
+<div id="myTabContent" class="tab-content">
+	<div class="tab-pane fade show active" id="basic" role="tabpanel" aria-labelledby="basic-tab">
+		<table class="table table-striped" width="100%">
+			<tr>
+				<td><strong>项目编号</strong></td>
+				<td>0001</td>
+
+				<td><strong>项目名称</strong></td>
+				<td>健康建筑示例</td>
+			</tr>
+			<tr>
+				<td><strong>评价体系</strong></td>
+				<td>健康建筑评价标准</td>
+
+				<td><strong>建筑类型</strong></td>
+				<td>办公楼</td>
+			</tr>
+			<tr>
+				<td><strong>建筑面积</strong></td>
+				<td>1234 m<sup>2</sup></td>
+
+				<td><strong>建筑层数</strong></td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td><strong>气候区</strong></td>
+				<td>寒冷</td>
+
+				<td><strong>竣工年份</strong></td>
+				<td>2019</td>
+			</tr>
+			<tr>
+				<td><strong>所在省份</strong></td>
+				<td>北京</td>
+
+				<td><strong>详细地址</strong></td>
+				<td>xxx</td>
+			</tr>
+			<tr>
+				<td><strong>业主名称</strong></td>
+				<td>xxx</td>
+
+				<td><strong>联系人</strong></td>
+				<td>张三</td>
+			</tr>
+			<tr>
+				<td><strong>联系电话</strong></td>
+				<td>12345678901</td>
+
+				<td><strong>电子邮箱</strong></td>
+				<td>123@abc.com</td>
+			</tr>
+		</table>
+
+
+
+		<hr>
+		<h5>申请材料</h5>
+		<table class="table table-striped" width="100%">
+			<tr>
+				<th>名称</th>
+				<th>说明</th>
+				<th></th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<td>施工图纸</td>
+				<td>以PDF格式提交，包含建筑、结构、机电、暖通，限**MB。</td>
+				<td><input type="file" class="form-control"></td>
+				<td>
+					<button class="btn btn-primary btn-sm">上传</button>
+					<button class="btn btn-outline-primary btn-sm">下载</button>
+					<button class="btn btn-outline-primary btn-sm">删除</button>
+				</td>
+			</tr>
+			<tr>
+				<td>技术说明</td>
+				<td>以PDF格式提交，包含建筑、结构、机电、暖通，限**MB。</td>
+				<td><input type="file" class="form-control"></td>
+				<td>
+					<button class="btn btn-primary btn-sm">上传</button>
+					<button class="btn btn-outline-primary btn-sm">下载</button>
+					<button class="btn btn-outline-primary btn-sm">删除</button>
+				</td>
+			</tr>
+			<tr>
+				<td>展示图</td>
+				<td>以JPG格式提交，分辨率不小于1280*720，限**MB。</td>
+				<td><input type="file" class="form-control"></td>
+				<td>
+					<button class="btn btn-primary btn-sm">上传</button>
+					<button class="btn btn-outline-primary btn-sm">下载</button>
+					<button class="btn btn-outline-primary btn-sm">删除</button>
+				</td>
+			</tr>
+			<tr>
+				<td>其它</td>
+				<td>其它辅助材料。</td>
+				<td><input type="file" class="form-control"></td>
+				<td>
+					<button class="btn btn-primary btn-sm">上传</button>
+					<button class="btn btn-outline-primary btn-sm">下载</button>
+					<button class="btn btn-outline-primary btn-sm">删除</button>
+				</td>
+			</tr>
+		</table>
+
+		<button class="btn btn-primary btn-sm">保存</span></button>
+		<button class="btn btn-outline-primary btn-sm"><i data-feather="plus-circle"></i> 新增</span></button>
+	</div>
+
+
+
+
+
+
+	<div class="tab-pane fade" id="data" role="tabpanel" aria-labelledby="data-tab">
+		<table class="table table-striped" width="100%">
+			<tr>
+				<th>技术指标</th>
+				<th>设计值</th>
+				<th>标准值</th>
+				<th>实测值</th>
+				<th>评审结论</th>
+				<th>评审意见</th>
+				<th>评审员</th>
+			</tr>
+			<tr>
+				<td>甲醛（mg/m<sup>3</sup>）</td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td>
+					<select class="custom-select d-block w-100" id="">
+						<option value="">请选择...</option>
+						<option>通过</option>
+						<option>不通过</option>
+					</select>
+				</td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+			</tr>
+			<tr>
+				<td>苯（mg/m<sup>3</sup>）</td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td>
+					<select class="custom-select d-block w-100" id="">
+						<option value="">请选择...</option>
+						<option>通过</option>
+						<option>不通过</option>
+					</select>
+				</td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+			</tr>
+			<tr>
+				<td>甲苯（mg/m<sup>3</sup>）</td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td>
+					<select class="custom-select d-block w-100" id="">
+						<option value="">请选择...</option>
+						<option>通过</option>
+						<option>不通过</option>
+					</select>
+				</td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+			</tr>
+			<tr>
+				<td>TVOC（mg/m<sup>3</sup>）</td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td>
+					<select class="custom-select d-block w-100" id="">
+						<option value="">请选择...</option>
+						<option>通过</option>
+						<option>不通过</option>
+					</select>
+				</td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+			</tr>
+			<tr>
+				<td>氨（mg/m<sup>3</sup>）</td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td>
+					<select class="custom-select d-block w-100" id="">
+						<option value="">请选择...</option>
+						<option>通过</option>
+						<option>不通过</option>
+					</select>
+				</td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+			</tr>
+			<tr>
+				<td>氡（Bq/m<sup>3</sup>）</td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td>
+					<select class="custom-select d-block w-100" id="">
+						<option value="">请选择...</option>
+						<option>通过</option>
+						<option>不通过</option>
+					</select>
+				</td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+				<td><input type="text" class="form-control" id="" placeholder=""></td>
+			</tr>
+		</table>
+
+		
+		<button class="btn btn-primary btn-sm">保存</span></button>
+		<button class="btn btn-outline-primary btn-sm"><i data-feather="plus-circle"></i> 新增</span></button>
+	</div>
+
+
+
+
+
+
+
+
+	<div class="tab-pane fade" id="status" role="tabpanel" aria-labelledby="status-tab">
+		<div class="row">
+			<div class="col-md-6">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>创建日期</td>
+						<td>2020-05-31</td>
+					</tr>
+					<tr>
+						<td>认证状态</td>
+						<td>
+							<select class="custom-select d-block w-100" id="">
+								<option>申请提交成功</option>
+								<option>申请已受理</option>
+								<option>材料提交成功</option>
+								<option>形式审查中</option>
+								<option>专家评审中</option>
+								<option>数据检测中</option>
+								<option>认证通过</option>
+								<option>认证即将过期</option>
+								<option>认证过期</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>形式审查</td>
+						<td>
+							<label><input type="radio" name="xingshi"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
+							<label><input type="radio" name="xingshi"> 不通过<i data-feather="x-square" class="danger"></i></label>
+						</td>
+					</tr>
+					<tr>
+						<td>专家评审</td>
+						<td>
+							<label><input type="radio" name="zhuanjia"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
+							<label><input type="radio" name="zhuanjia"> 不通过<i data-feather="x-square" class="danger"></i></label>
+						</td>
+					</tr>
+					<tr>
+						<td>数据检测</td>
+						<td>
+							<label><input type="radio" name="shuju"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
+							<label><input type="radio" name="shuju"> 不通过<i data-feather="x-square" class="danger"></i></label>
+						</td>
+					</tr>
+					<tr>
+						<td>认证结果</td>
+						<td>
+							<label><input type="radio" name="renzheng"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
+							<label><input type="radio" name="renzheng"> 不通过<i data-feather="x-square" class="danger"></i></label>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+
+
+			<div class="col-md-6">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>证书编号</td>
+						<td>
+							<div id="certificateno" style="display: none;"><strong>CQCJKJZ2020060101</strong></div>
+							<button onclick="showNo()" class="btn btn-primary btn-sm">生成编号</button>
+						</td>
+					</tr>
+					<tr>
+						<td>证书等级</td>
+						<td>
+							<select class="custom-select d-block w-100" id="">
+								<option value="">请选择...</option>
+								<option value="">一级</option>
+								<option value="">二级</option>
+								<option value="">三级</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>证书有效期</td>
+						<td style="text-align: center">
+							<input type="datetime" size="10" class="form-control">至
+							<input type="datetime" size="10" class="form-control">
+						</td>
+					</tr>
+					<tr>
+						<td>操作</td>
+						<td>
+							<button class="btn btn-primary btn-sm">发证</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<script type="text/javascript">
+function showNo(){
+	$("#certificateno").show("fast");
+}
+</script>
+
+				<hr>
+<footer class="small gray">
+	<p>
+		<span>&copy;</span>
+		<span><script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+		中国质量认证中心 版权所有
+	</p>
+</footer>
+
+
+<script src="/cqc/assets/js/jquery-3.2.1.slim.min.js"></script>
+<script src="/cqc/assets/js/jquery-1.11.3.js"></script>
+<script src="/cqc/assets/js/popper.min.js"></script>
+<script src="/cqc/assets/js/bootstrap.min.js"></script>
+<script src="/cqc/assets/js/feather.min.js"></script>
+<script>
+feather.replace()
+</script>
+			</main>
+		</div>
+	</div>
+</body>
+</html>

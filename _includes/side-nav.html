@@ -1,0 +1,37 @@
+<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+	<div class="sidebar-sticky">
+		<ul class="nav flex-column">
+			<li class="nav-item">
+				<a class="nav-link {% if page.url contains 'dashboard' %}active{% endif %}" href="{{ site.baseurl }}/pages/dashboard.html">
+					<i data-feather="home"></i>
+					首页 <span class="sr-only">(current)</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link {% if page.url contains 'new' %}active{% endif %}" href="{{ site.baseurl }}/pages/new-info.html">
+					<i data-feather="plus-square"></i>
+					新建项目
+				</a>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link {% if page.url contains 'projects' %}active{% endif %}" href="{{ site.baseurl }}/pages/projects.html">
+					<i data-feather="database"></i>
+					项目管理
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link {% if page.url contains 'users' %}active{% endif %}" href="{{ site.baseurl }}/pages/users.html">
+					<i data-feather="users"></i>
+					用户管理
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link {% if page.url contains 'clients' %}active{% endif %}" href="{{ site.baseurl }}/pages/settings.html">
+					<i data-feather="settings"></i>
+					个人中心
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>

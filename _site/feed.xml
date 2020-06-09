@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://localhost:4000/cqc/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/cqc/" rel="alternate" type="text/html" /><updated>2020-06-09T11:08:54+08:00</updated><id>http://localhost:4000/cqc/</id><title type="html">Your awesome title</title><entry><title type="html">健康建筑示例</title><link href="http://localhost:4000/cqc/2019/12/01/project12.html" rel="alternate" type="text/html" title="健康建筑示例" /><published>2019-12-01T00:00:00+08:00</published><updated>2019-12-01T00:00:00+08:00</updated><id>http://localhost:4000/cqc/2019/12/01/project12</id><content type="html" xml:base="http://localhost:4000/cqc/2019/12/01/project12.html">&lt;div class=&quot;row&quot; style=&quot;margin-top: 2em;&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
+			&lt;ol class=&quot;carousel-indicators&quot;&gt;
+				&lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+				&lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+				&lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+			&lt;/ol&gt;
+			&lt;div class=&quot;carousel-inner&quot;&gt;
+				&lt;div class=&quot;carousel-item active&quot;&gt;
+					&lt;div class=&quot;carousel-caption&quot;&gt;
+						&lt;h1&gt;Sample&lt;/h1&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;carousel-item&quot;&gt;
+					&lt;div class=&quot;carousel-caption&quot;&gt;
+						&lt;h1&gt;Sample&lt;/h1&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;carousel-item&quot;&gt;
+					&lt;div class=&quot;container&quot;&gt;
+						&lt;div class=&quot;carousel-caption&quot;&gt;
+							&lt;h1&gt;Sample&lt;/h1&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;a class=&quot;carousel-control-prev&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+				&lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+				&lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+			&lt;/a&gt;
+			&lt;a class=&quot;carousel-control-next&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+				&lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+				&lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+
+
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;h5&gt;项目简介&lt;/h5&gt;
+		&lt;p&gt;书家果格便感采展组更表，间变位治着管它族三即，象称受建类算个装层却。 音收米书适月从此，山记解手石命府我，要-隶详切管。 该中青众色酸克众的七其外多，为克天与容步厂任边五来，只民技B线助识其抖承义。&lt;/p&gt;
+
+		&lt;p&gt;光术置场心置更变象，达工十空张些好，与数陕于作J建。 低没据报即政江转成，及县到候花装高，民金杨个直精示。 极行老亲实都高验了候府，江几素今美管条性及形，连局B下志线具很围。 强亲么置统界就她数手，且几数导等料单，院技杏元四是两杨。 都每然团打科体根或，便众对养孤色式。&lt;/p&gt;
+
+		&lt;p&gt;话向本前上局县使后证，精适则位医困建什。 百观主飞角西须众高很，持万分即的离意具飞光，心才J机雨装们呜。 出住矿采王过科给类出片，克儿断林他育需龙条，近情6K积代整孝Y。广两程心先低达又认，律进各当和天正，角业S院助入何。 习听严这得种需需交四力，段委做器为红权叫还只可，积百刷位非般越直攻。&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;h5&gt;基本信息&lt;/h5&gt;
+		&lt;table class=&quot;table table-striped&quot; width=&quot;100%&quot;&gt;
+			&lt;tr&gt;
+				&lt;td&gt;&lt;strong&gt;项目编号&lt;/strong&gt;&lt;/td&gt;
+				&lt;td&gt;0002&lt;/td&gt;
+
+				&lt;td&gt;&lt;strong&gt;项目名称&lt;/strong&gt;&lt;/td&gt;
+				&lt;td&gt;健康建筑示例二&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;&lt;strong&gt;评价体系&lt;/strong&gt;&lt;/td&gt;
+				&lt;td&gt;健康建筑评价标准&lt;/td&gt;
+
+				&lt;td&gt;&lt;strong&gt;建筑类型&lt;/strong&gt;&lt;/td&gt;
+				&lt;td&gt;办公楼&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;&lt;strong&gt;建筑面积&lt;/strong&gt;&lt;/td&gt;
+				&lt;td&gt;1234 m&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+
+				&lt;td&gt;&lt;strong&gt;建筑层数&lt;/strong&gt;&lt;/td&gt;
+				&lt;td&gt;10&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;&lt;strong&gt;气候区&lt;/strong&gt;&lt;/td&gt;
+				&lt;td&gt;夏热冬冷&lt;/td&gt;
+
+				&lt;td&gt;&lt;strong&gt;竣工年份&lt;/strong&gt;&lt;/td&gt;
+				&lt;td&gt;2017&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;&lt;strong&gt;所在省份&lt;/strong&gt;&lt;/td&gt;
+				&lt;td&gt;上海&lt;/td&gt;
+
+				&lt;td&gt;&lt;strong&gt;详细地址&lt;/strong&gt;&lt;/td&gt;
+				&lt;td&gt;xxx&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;&lt;strong&gt;业主名称&lt;/strong&gt;&lt;/td&gt;
+				&lt;td&gt;xxx&lt;/td&gt;
+
+				&lt;td&gt;&lt;strong&gt;联系人&lt;/strong&gt;&lt;/td&gt;
+				&lt;td&gt;李四&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;&lt;strong&gt;联系电话&lt;/strong&gt;&lt;/td&gt;
+				&lt;td&gt;12345678901&lt;/td&gt;
+
+				&lt;td&gt;&lt;strong&gt;电子邮箱&lt;/strong&gt;&lt;/td&gt;
+				&lt;td&gt;123@abc.com&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/table&gt;
+	&lt;/div&gt;
+
+
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;h5&gt;检测数据&lt;/h5&gt;
+		&lt;table class=&quot;table table-striped&quot; width=&quot;100%&quot;&gt;
+			&lt;tr&gt;
+				&lt;th&gt;技术指标&lt;/th&gt;
+				&lt;th&gt;设计值&lt;/th&gt;
+				&lt;th&gt;标准值&lt;/th&gt;
+				&lt;th&gt;实测值&lt;/th&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;甲醛（mg/m&lt;sup&gt;3&lt;/sup&gt;）&lt;/td&gt;
+				&lt;td&gt;0.08&lt;/td&gt;
+				&lt;td&gt;0.10&lt;/td&gt;
+				&lt;td&gt;0.09&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;苯（mg/m&lt;sup&gt;3&lt;/sup&gt;）&lt;/td&gt;
+				&lt;td&gt;0.09&lt;/td&gt;
+				&lt;td&gt;0.11&lt;/td&gt;
+				&lt;td&gt;0.10&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;甲苯（mg/m&lt;sup&gt;3&lt;/sup&gt;）&lt;/td&gt;
+				&lt;td&gt;0.18&lt;/td&gt;
+				&lt;td&gt;0.20&lt;/td&gt;
+				&lt;td&gt;0.19&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;TVOC（mg/m&lt;sup&gt;3&lt;/sup&gt;）&lt;/td&gt;
+				&lt;td&gt;0.50&lt;/td&gt;
+				&lt;td&gt;0.60&lt;/td&gt;
+				&lt;td&gt;0.55&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;氨（mg/m&lt;sup&gt;3&lt;/sup&gt;）&lt;/td&gt;
+				&lt;td&gt;0.15&lt;/td&gt;
+				&lt;td&gt;0.20&lt;/td&gt;
+				&lt;td&gt;0.18&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;氡（Bq/m&lt;sup&gt;3&lt;/sup&gt;）&lt;/td&gt;
+				&lt;td&gt;180&lt;/td&gt;
+				&lt;td&gt;200&lt;/td&gt;
+				&lt;td&gt;190&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/table&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-4&quot;&gt;
+		&lt;h5&gt;其它信息&lt;/h5&gt;
+		&lt;p&gt;很清元应明理再光，计百得指海场省，干G建正杨财。
+			件该几相基体石增利，白况属就运新求片相，什辰置例两贡引。 全东层严有两外十提难传程儿天整，要整复位求干展M图杏丽花址。克处身等有命克整，手子存事多内导，先D厕个拒市。必土观技流事大或术济工化历，市置事委该通8示到B针。&lt;/p&gt;
+		&lt;/div&gt;
+
+
+		&lt;div class=&quot;col-md-4&quot;&gt;
+			&lt;h5&gt;其它信息&lt;/h5&gt;
+			&lt;p&gt;书家果格便感采展组更表，间变位治着管它族三即，象称受建类算个装层却。 音收米书适月从此，山记解手石命府我，要-隶详切管。 该中青众色酸克众的七其外多，为克天与容步厂任边五来，只民技B线助识其抖承义。&lt;/p&gt;
+		&lt;/div&gt;
+
+
+		&lt;div class=&quot;col-md-4&quot;&gt;
+			&lt;h5&gt;其它信息&lt;/h5&gt;
+			&lt;p&gt;光术置场心置更变象，达工十空张些好，与数陕于作J建。 低没据报即政江转成，及县到候花装高，民金杨个直精示。 极行老亲实都高验了候府，江几素今美管条性及形，连局B下志线具很围。 强亲么置统界就她数手，且几数导等料单，院技杏元四是两杨。 都每然团打科体根或，便众对养孤色式。&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;</content><author><name></name></author><summary type="html">Sample Sample Sample Previous Next</summary></entry><entry><title type="html">健康建筑示例</title><link href="http://localhost:4000/cqc/2019/11/01/project11.html" rel="alternate" type="text/html" title="健康建筑示例" /><published>2019-11-01T00:00:00+08:00</published><updated>2019-11-01T00:00:00+08:00</updated><id>http://localhost:4000/cqc/2019/11/01/project11</id><content type="html" xml:base="http://localhost:4000/cqc/2019/11/01/project11.html"></content><author><name></name></author></entry><entry><title type="html">健康建筑示例</title><link href="http://localhost:4000/cqc/2019/10/01/project10.html" rel="alternate" type="text/html" title="健康建筑示例" /><published>2019-10-01T00:00:00+08:00</published><updated>2019-10-01T00:00:00+08:00</updated><id>http://localhost:4000/cqc/2019/10/01/project10</id><content type="html" xml:base="http://localhost:4000/cqc/2019/10/01/project10.html"></content><author><name></name></author></entry><entry><title type="html">健康建筑示例</title><link href="http://localhost:4000/cqc/2019/09/01/project9.html" rel="alternate" type="text/html" title="健康建筑示例" /><published>2019-09-01T00:00:00+08:00</published><updated>2019-09-01T00:00:00+08:00</updated><id>http://localhost:4000/cqc/2019/09/01/project9</id><content type="html" xml:base="http://localhost:4000/cqc/2019/09/01/project9.html"></content><author><name></name></author></entry><entry><title type="html">健康建筑示例</title><link href="http://localhost:4000/cqc/2019/08/01/project8.html" rel="alternate" type="text/html" title="健康建筑示例" /><published>2019-08-01T00:00:00+08:00</published><updated>2019-08-01T00:00:00+08:00</updated><id>http://localhost:4000/cqc/2019/08/01/project8</id><content type="html" xml:base="http://localhost:4000/cqc/2019/08/01/project8.html"></content><author><name></name></author></entry><entry><title type="html">健康建筑示例</title><link href="http://localhost:4000/cqc/2019/07/01/project7.html" rel="alternate" type="text/html" title="健康建筑示例" /><published>2019-07-01T00:00:00+08:00</published><updated>2019-07-01T00:00:00+08:00</updated><id>http://localhost:4000/cqc/2019/07/01/project7</id><content type="html" xml:base="http://localhost:4000/cqc/2019/07/01/project7.html"></content><author><name></name></author></entry><entry><title type="html">健康建筑示例</title><link href="http://localhost:4000/cqc/2019/06/01/project6.html" rel="alternate" type="text/html" title="健康建筑示例" /><published>2019-06-01T00:00:00+08:00</published><updated>2019-06-01T00:00:00+08:00</updated><id>http://localhost:4000/cqc/2019/06/01/project6</id><content type="html" xml:base="http://localhost:4000/cqc/2019/06/01/project6.html"></content><author><name></name></author></entry><entry><title type="html">健康建筑示例</title><link href="http://localhost:4000/cqc/2019/05/01/project5.html" rel="alternate" type="text/html" title="健康建筑示例" /><published>2019-05-01T00:00:00+08:00</published><updated>2019-05-01T00:00:00+08:00</updated><id>http://localhost:4000/cqc/2019/05/01/project5</id><content type="html" xml:base="http://localhost:4000/cqc/2019/05/01/project5.html"></content><author><name></name></author></entry><entry><title type="html">健康建筑示例</title><link href="http://localhost:4000/cqc/2019/04/01/project4.html" rel="alternate" type="text/html" title="健康建筑示例" /><published>2019-04-01T00:00:00+08:00</published><updated>2019-04-01T00:00:00+08:00</updated><id>http://localhost:4000/cqc/2019/04/01/project4</id><content type="html" xml:base="http://localhost:4000/cqc/2019/04/01/project4.html"></content><author><name></name></author></entry><entry><title type="html">健康建筑示例</title><link href="http://localhost:4000/cqc/2019/03/01/project3.html" rel="alternate" type="text/html" title="健康建筑示例" /><published>2019-03-01T00:00:00+08:00</published><updated>2019-03-01T00:00:00+08:00</updated><id>http://localhost:4000/cqc/2019/03/01/project3</id><content type="html" xml:base="http://localhost:4000/cqc/2019/03/01/project3.html"></content><author><name></name></author></entry></feed>

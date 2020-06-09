@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+
+	<title>健康建筑认证管理平台 | 项目列表</title>
+	
+
+	<link rel="stylesheet" type="text/css" href="/cqc/assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/cqc/assets/css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="/cqc/assets/css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="/cqc/assets/css/custom.css">
+
+	
+	<script src="/cqc/assets/js/echarts.js"></script>
+	<script src="/cqc/assets/js/dataTool.js"></script>
+	<script src="/cqc/assets/js/china.js"></script>
+</head>
+
+</head>
+
+<body>
+    <div style="width: 100%; height: 300px; background: url(/cqc/assets/img/cover1.jpg) center center; background-size: cover; background-attachment: fixed;">
+        <div class="cover-head">
+            <div class="btn-group">
+                <a href="/cqc/" class="btn btn-sm btn-light"><i data-feather="home"></i> 首页</a>
+
+                <a href="/cqc/pages/map.html" class="btn btn-sm btn-light"><i data-feather="map-pin"></i> 地图</a>
+            </div>
+            
+            <div class="btn-group">
+                <a href="/cqc/pages/login.html" class="btn btn-sm btn-outline-light"><i data-feather="log-in"></i> 登录</a>
+
+                <a href="/cqc/pages/signup.html" class="btn btn-sm btn-outline-light"><i data-feather="user"></i> 注册</a>
+            </div>
+        </div>
+
+        <div class="container" style="color: white;">
+            <h3 style="letter-spacing: 0.1em; text-shadow: 0 0 10px black; margin-top: 4em;">中国质量认证中心</h3>
+            <h1 style="letter-spacing: 0.1em; text-shadow: 0 0 10px black;">健康建筑认证项目列表</h1>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row" style="margin-top: 1.5em;">
+            <div class="col-md-4">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-primary">热度 <i data-feather="trending-down"></i></button>
+                    <button type="button" class="btn btn-sm btn-outline-primary">时间 <i data-feather="trending-down"></i></button>
+                    <button type="button" class="btn btn-sm btn-outline-primary"><i data-feather="list"></i> 全部</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="输入项目名称或ID搜索">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary">搜索</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-right">
+                <button type="button" class="btn btn-sm btn-outline-primary" onclick="showPrompt()"><i data-feather="search"></i> 筛选</button>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            
+            <div class="col-md-4">
+                <div class="list-canvas">
+                    
+                    <div style="width: 100%; height: 220px; border-top-left-radius: 4px; border-top-right-radius: 4px; background: url(/cqc/assets/img/pic1.jpg) center center; background-size: cover;"></div>
+                    
+                    <div class="list-info">
+                        <h6>健康建筑示例</h6>
+                        <P>
+                            ID: 0001<br>
+                            地址：北京市xxx<br>
+                            建筑面积：1234 m<sup>2</sup><br>
+                            建筑类型：办公楼<br>
+                            气候区：寒冷
+                        </P>
+                        <a href="/cqc/2019/12/01/project12.html">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="list-canvas">
+                    
+                    <div style="width: 100%; height: 220px; border-top-left-radius: 4px; border-top-right-radius: 4px; background: gray; color: white; text-align: center; padding-top: 80px;">
+                        <h1>Sample</h1>
+                    </div>
+                    
+                    <div class="list-info">
+                        <h6>健康建筑示例</h6>
+                        <P>
+                            ID: 0001<br>
+                            地址：北京市xxx<br>
+                            建筑面积：1234 m<sup>2</sup><br>
+                            建筑类型：办公楼<br>
+                            气候区：寒冷
+                        </P>
+                        <a href="/cqc/2019/11/01/project11.html">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="list-canvas">
+                    
+                    <div style="width: 100%; height: 220px; border-top-left-radius: 4px; border-top-right-radius: 4px; background: gray; color: white; text-align: center; padding-top: 80px;">
+                        <h1>Sample</h1>
+                    </div>
+                    
+                    <div class="list-info">
+                        <h6>健康建筑示例</h6>
+                        <P>
+                            ID: 0001<br>
+                            地址：北京市xxx<br>
+                            建筑面积：1234 m<sup>2</sup><br>
+                            建筑类型：办公楼<br>
+                            气候区：寒冷
+                        </P>
+                        <a href="/cqc/2019/10/01/project10.html">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="list-canvas">
+                    
+                    <div style="width: 100%; height: 220px; border-top-left-radius: 4px; border-top-right-radius: 4px; background: gray; color: white; text-align: center; padding-top: 80px;">
+                        <h1>Sample</h1>
+                    </div>
+                    
+                    <div class="list-info">
+                        <h6>健康建筑示例</h6>
+                        <P>
+                            ID: 0001<br>
+                            地址：北京市xxx<br>
+                            建筑面积：1234 m<sup>2</sup><br>
+                            建筑类型：办公楼<br>
+                            气候区：寒冷
+                        </P>
+                        <a href="/cqc/2019/09/01/project9.html">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="list-canvas">
+                    
+                    <div style="width: 100%; height: 220px; border-top-left-radius: 4px; border-top-right-radius: 4px; background: gray; color: white; text-align: center; padding-top: 80px;">
+                        <h1>Sample</h1>
+                    </div>
+                    
+                    <div class="list-info">
+                        <h6>健康建筑示例</h6>
+                        <P>
+                            ID: 0001<br>
+                            地址：北京市xxx<br>
+                            建筑面积：1234 m<sup>2</sup><br>
+                            建筑类型：办公楼<br>
+                            气候区：寒冷
+                        </P>
+                        <a href="/cqc/2019/08/01/project8.html">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="list-canvas">
+                    
+                    <div style="width: 100%; height: 220px; border-top-left-radius: 4px; border-top-right-radius: 4px; background: gray; color: white; text-align: center; padding-top: 80px;">
+                        <h1>Sample</h1>
+                    </div>
+                    
+                    <div class="list-info">
+                        <h6>健康建筑示例</h6>
+                        <P>
+                            ID: 0001<br>
+                            地址：北京市xxx<br>
+                            建筑面积：1234 m<sup>2</sup><br>
+                            建筑类型：办公楼<br>
+                            气候区：寒冷
+                        </P>
+                        <a href="/cqc/2019/07/01/project7.html">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="list-canvas">
+                    
+                    <div style="width: 100%; height: 220px; border-top-left-radius: 4px; border-top-right-radius: 4px; background: gray; color: white; text-align: center; padding-top: 80px;">
+                        <h1>Sample</h1>
+                    </div>
+                    
+                    <div class="list-info">
+                        <h6>健康建筑示例</h6>
+                        <P>
+                            ID: 0001<br>
+                            地址：北京市xxx<br>
+                            建筑面积：1234 m<sup>2</sup><br>
+                            建筑类型：办公楼<br>
+                            气候区：寒冷
+                        </P>
+                        <a href="/cqc/2019/06/01/project6.html">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="list-canvas">
+                    
+                    <div style="width: 100%; height: 220px; border-top-left-radius: 4px; border-top-right-radius: 4px; background: gray; color: white; text-align: center; padding-top: 80px;">
+                        <h1>Sample</h1>
+                    </div>
+                    
+                    <div class="list-info">
+                        <h6>健康建筑示例</h6>
+                        <P>
+                            ID: 0001<br>
+                            地址：北京市xxx<br>
+                            建筑面积：1234 m<sup>2</sup><br>
+                            建筑类型：办公楼<br>
+                            气候区：寒冷
+                        </P>
+                        <a href="/cqc/2019/05/01/project5.html">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="list-canvas">
+                    
+                    <div style="width: 100%; height: 220px; border-top-left-radius: 4px; border-top-right-radius: 4px; background: gray; color: white; text-align: center; padding-top: 80px;">
+                        <h1>Sample</h1>
+                    </div>
+                    
+                    <div class="list-info">
+                        <h6>健康建筑示例</h6>
+                        <P>
+                            ID: 0001<br>
+                            地址：北京市xxx<br>
+                            建筑面积：1234 m<sup>2</sup><br>
+                            建筑类型：办公楼<br>
+                            气候区：寒冷
+                        </P>
+                        <a href="/cqc/2019/04/01/project4.html">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="list-canvas">
+                    
+                    <div style="width: 100%; height: 220px; border-top-left-radius: 4px; border-top-right-radius: 4px; background: gray; color: white; text-align: center; padding-top: 80px;">
+                        <h1>Sample</h1>
+                    </div>
+                    
+                    <div class="list-info">
+                        <h6>健康建筑示例</h6>
+                        <P>
+                            ID: 0001<br>
+                            地址：北京市xxx<br>
+                            建筑面积：1234 m<sup>2</sup><br>
+                            建筑类型：办公楼<br>
+                            气候区：寒冷
+                        </P>
+                        <a href="/cqc/2019/03/01/project3.html">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="list-canvas">
+                    
+                    <div style="width: 100%; height: 220px; border-top-left-radius: 4px; border-top-right-radius: 4px; background: gray; color: white; text-align: center; padding-top: 80px;">
+                        <h1>Sample</h1>
+                    </div>
+                    
+                    <div class="list-info">
+                        <h6>健康建筑示例</h6>
+                        <P>
+                            ID: 0001<br>
+                            地址：北京市xxx<br>
+                            建筑面积：1234 m<sup>2</sup><br>
+                            建筑类型：办公楼<br>
+                            气候区：寒冷
+                        </P>
+                        <a href="/cqc/2019/02/01/project2.html">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="list-canvas">
+                    
+                    <div style="width: 100%; height: 220px; border-top-left-radius: 4px; border-top-right-radius: 4px; background: gray; color: white; text-align: center; padding-top: 80px;">
+                        <h1>Sample</h1>
+                    </div>
+                    
+                    <div class="list-info">
+                        <h6>健康建筑示例</h6>
+                        <P>
+                            ID: 0001<br>
+                            地址：北京市xxx<br>
+                            建筑面积：1234 m<sup>2</sup><br>
+                            建筑类型：办公楼<br>
+                            气候区：寒冷
+                        </P>
+                        <a href="/cqc/2019/01/01/project1.html">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="prompt-bg" id="prompt-bg">
+        <div class="prompt-canvas" style="width: 800px; margin-top: 150px;">
+            <p>
+                <label>气候区</label><br>
+                <label><input type="checkbox"> 严寒</label>
+                <label><input type="checkbox"> 寒冷</label>
+                <label><input type="checkbox"> 夏热冬冷</label>
+                <label><input type="checkbox"> 夏热冬暖</label>
+                <label><input type="checkbox"> 温和</label>
+                <label><input type="checkbox"> 全选</label>
+            </p>
+            <p>
+                <label>建筑类型</label><br>
+                <label><input type="checkbox"> 普通居住建筑</label>
+                <label><input type="checkbox"> 高层居住建筑</label>
+                <label><input type="checkbox"> 办公楼</label>
+                <label><input type="checkbox"> 学校</label>
+                <label><input type="checkbox"> 商场</label>
+                <label><input type="checkbox"> 医院</label>
+                <label><input type="checkbox"> 其它</label>
+                <label><input type="checkbox"> 全选</label>
+            </p>
+            <p>
+                <label>建筑面积</label><br>
+                <label><input type="checkbox"> 2000 m<sup>2</sup> 以下</label>
+                <label><input type="checkbox"> 2000～5000 m<sup>2</sup></label>
+                <label><input type="checkbox"> 5000～10000 m<sup>2</sup></label>
+                <label><input type="checkbox"> 10000～50000 m<sup>2</sup></label>
+                <label><input type="checkbox"> 50000 m<sup>2</sup> 以上</label>
+                <label><input type="checkbox"> 全选</label>
+            </p>
+
+            <button type="button" class="btn btn-sm btn-primary"><i data-feather="search"></i> 筛选</button>
+
+            <button type="button" class="btn btn-sm btn-outline-primary" onclick="showPrompt()">关闭</button>
+        </div>
+    </div>
+
+
+    <center>
+        <hr>
+<footer class="small gray">
+	<p>
+		<span>&copy;</span>
+		<span><script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+		中国质量认证中心 版权所有
+	</p>
+</footer>
+
+
+<script src="/cqc/assets/js/jquery-3.2.1.slim.min.js"></script>
+<script src="/cqc/assets/js/jquery-1.11.3.js"></script>
+<script src="/cqc/assets/js/popper.min.js"></script>
+<script src="/cqc/assets/js/bootstrap.min.js"></script>
+<script src="/cqc/assets/js/feather.min.js"></script>
+<script>
+feather.replace()
+</script>
+    </center>
+
+
+
+    <script type="text/javascript">
+    function showPrompt(){
+        $("#prompt-bg").slideToggle("");
+    }
+    </script>
+
+</body>
+</html>

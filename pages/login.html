@@ -1,0 +1,38 @@
+---
+title: "登录"
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include head.html %}
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/signin.css">
+</head>
+
+<body style="background: url({{ site.baseurl }}/assets/img/cover3.jpg) center center; background-size: cover; background-attachment: fixed;">
+	<div class="sign-convas">
+		<center>
+			<h4 style="letter-spacing: 0.2em; margin: 0.5em;">中国质量认证中心</h4>
+			<h2 style="letter-spacing: 0.2em; margin: 0.5em">健康建筑运行认证管理平台</h2>
+			<h4 style="letter-spacing: 0.2em; margin: 0.5em;">欢迎登录</h4>
+		</center>
+
+		<form class="form-signin" role="form" action="{{ site.baseurl }}/pages/dashboard.html">
+			<input type="text" class="form-control" placeholder="用户名" autofocus>
+			<input type="password" class="form-control" placeholder="密码">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="remember-me"> 记住我
+				</label>
+			</div>
+			<button class="btn btn-sm btn-primary btn-block" type="submit">登录</button>
+			<br>
+			没有账号？
+			注册一个 <a href="{{ site.baseurl }}/pages/signup.html"><i data-feather="arrow-right-circle"></i></a>
+		</form>
+		
+		<center>{% include footer.html %}</center>
+	</div>
+</body>
+</html>
