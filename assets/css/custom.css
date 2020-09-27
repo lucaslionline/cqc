@@ -157,3 +157,24 @@
 .list-info {
 	padding: 1em 2em;
 }
+
+
+
+
+.criteria-level1 {
+	width: 150px;
+	vertical-align: top;
+
+}
+.criteria-level1 ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.criteria-level1 ul li {
+	margin-bottom: 1em;
+}
+.criteria-level1 ul li:hover {
+	cursor: pointer;
+	color: #007bff;
+}

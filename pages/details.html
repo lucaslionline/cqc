@@ -144,7 +144,72 @@ title: "健康建筑示例"
 
 
 	<div class="tab-pane fade" id="data" role="tabpanel" aria-labelledby="data-tab">
-		<table class="table table-striped" width="100%">
+		<table style="width:100%">
+			<tr>
+				<td class="criteria-level1">
+					<ul>
+						<li class="icon-nav" onclick="showIndoor()">
+							<div class="img-thumbnail center bg-light">
+								<h2><i data-feather="thermometer"></i></h2>
+								<h6>室内环境质量</h6>
+							</div>
+						</li>
+						<li class="icon-nav" onclick="showOutdoor()">
+							<div class="img-thumbnail center bg-light">
+								<h2><i data-feather="sun"></i></h2>
+								<h6>室外环境质量</h6>
+							</div>
+						</li>
+						<li class="icon-nav" onclick="showSurrounding()">
+							<div class="img-thumbnail center bg-light">
+								<h2><i data-feather="share-2"></i></h2>
+								<h6>周边生活配套</h6>
+							</div>
+						</li>
+						<li class="icon-nav" onclick="showResource()">
+							<div class="img-thumbnail center bg-light">
+								<h2><i data-feather="command"></i></h2>
+								<h6>资源利用</h6>
+							</div>
+						</li>
+						<li class="icon-nav" onclick="showEnvironment()">
+							<div class="img-thumbnail center bg-light">
+								<h2><i data-feather="feather"></i></h2>
+								<h6>环境生态保护</h6>
+							</div>
+						</li>
+						<li class="icon-nav" onclick="showEconomy()">
+							<div class="img-thumbnail center bg-light">
+								<h2><i data-feather="dollar-sign"></i></h2>
+								<h6>经济性</h6>
+							</div>
+						</li>
+					</ul>
+				</td>
+
+				<td style="vertical-align: top">
+					<div id="indoor" style="display: none">
+						{% include indoor.html %}
+					</div>
+					<div id="outdoor" style="display: none">
+						{% include outdoor.html %}
+					</div>
+					<div id="surrounding" style="display: none">
+						{% include surrounding.html %}
+					</div>
+					<div id="resource" style="display: none">
+						{% include resource.html %}
+					</div>
+					<div id="environment" style="display: none">
+						{% include environment.html %}
+					</div>
+					<div id="economy" style="display: none">
+						{% include economy.html %}
+					</div>
+				</td>
+			</tr>
+		</table>
+		<!--table class="table table-striped" width="100%">
 			<tr>
 				<th>技术指标</th>
 				<th>设计值</th>
@@ -248,8 +313,8 @@ title: "健康建筑示例"
 
 		
 		<button class="btn btn-primary btn-sm">保存</span></button>
-		<button class="btn btn-outline-primary btn-sm"><i data-feather="plus-circle"></i> 新增</span></button>
-	</div>
+		<button class="btn btn-outline-primary btn-sm"><i data-feather="plus-circle"></i> 新增</span></button-->
+		</div>
 
 
 
@@ -258,108 +323,135 @@ title: "健康建筑示例"
 
 
 
-	<div class="tab-pane fade" id="status" role="tabpanel" aria-labelledby="status-tab">
-		<div class="row">
-			<div class="col-md-6">
-				<table class="table table-striped" width="100%">
-					<tr>
-						<td>创建日期</td>
-						<td>2020-05-31</td>
-					</tr>
-					<tr>
-						<td>认证状态</td>
-						<td>
-							<select class="custom-select d-block w-100" id="">
-								<option>申请提交成功</option>
-								<option>申请已受理</option>
-								<option>材料提交成功</option>
-								<option>形式审查中</option>
-								<option>专家评审中</option>
-								<option>数据检测中</option>
-								<option>认证通过</option>
-								<option>认证即将过期</option>
-								<option>认证过期</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>形式审查</td>
-						<td>
-							<label><input type="radio" name="xingshi"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
-							<label><input type="radio" name="xingshi"> 不通过<i data-feather="x-square" class="danger"></i></label>
-						</td>
-					</tr>
-					<tr>
-						<td>专家评审</td>
-						<td>
-							<label><input type="radio" name="zhuanjia"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
-							<label><input type="radio" name="zhuanjia"> 不通过<i data-feather="x-square" class="danger"></i></label>
-						</td>
-					</tr>
-					<tr>
-						<td>数据检测</td>
-						<td>
-							<label><input type="radio" name="shuju"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
-							<label><input type="radio" name="shuju"> 不通过<i data-feather="x-square" class="danger"></i></label>
-						</td>
-					</tr>
-					<tr>
-						<td>认证结果</td>
-						<td>
-							<label><input type="radio" name="renzheng"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
-							<label><input type="radio" name="renzheng"> 不通过<i data-feather="x-square" class="danger"></i></label>
-						</td>
-					</tr>
-				</table>
-			</div>
+		<div class="tab-pane fade" id="status" role="tabpanel" aria-labelledby="status-tab">
+			<div class="row">
+				<div class="col-md-6">
+					<table class="table table-striped" width="100%">
+						<tr>
+							<td>创建日期</td>
+							<td>2020-05-31</td>
+						</tr>
+						<tr>
+							<td>认证状态</td>
+							<td>
+								<select class="custom-select d-block w-100" id="">
+									<option>申请提交成功</option>
+									<option>申请已受理</option>
+									<option>材料提交成功</option>
+									<option>形式审查中</option>
+									<option>专家评审中</option>
+									<option>数据检测中</option>
+									<option>认证通过</option>
+									<option>认证即将过期</option>
+									<option>认证过期</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>形式审查</td>
+							<td>
+								<label><input type="radio" name="xingshi"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
+								<label><input type="radio" name="xingshi"> 不通过<i data-feather="x-square" class="danger"></i></label>
+							</td>
+						</tr>
+						<tr>
+							<td>专家评审</td>
+							<td>
+								<label><input type="radio" name="zhuanjia"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
+								<label><input type="radio" name="zhuanjia"> 不通过<i data-feather="x-square" class="danger"></i></label>
+							</td>
+						</tr>
+						<tr>
+							<td>数据检测</td>
+							<td>
+								<label><input type="radio" name="shuju"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
+								<label><input type="radio" name="shuju"> 不通过<i data-feather="x-square" class="danger"></i></label>
+							</td>
+						</tr>
+						<tr>
+							<td>认证结果</td>
+							<td>
+								<label><input type="radio" name="renzheng"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
+								<label><input type="radio" name="renzheng"> 不通过<i data-feather="x-square" class="danger"></i></label>
+							</td>
+						</tr>
+					</table>
+				</div>
 
 
 
-			<div class="col-md-6">
-				<table class="table table-striped" width="100%">
-					<tr>
-						<td>证书编号</td>
-						<td>
-							<div id="certificateno" style="display: none;"><strong>CQCJKJZ2020060101</strong></div>
-							<button onclick="showNo()" class="btn btn-primary btn-sm">生成编号</button>
-						</td>
-					</tr>
-					<tr>
-						<td>证书等级</td>
-						<td>
-							<select class="custom-select d-block w-100" id="">
-								<option value="">请选择...</option>
-								<option value="">一级</option>
-								<option value="">二级</option>
-								<option value="">三级</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>证书有效期</td>
-						<td style="text-align: center">
-							<input type="datetime" size="10" class="form-control">至
-							<input type="datetime" size="10" class="form-control">
-						</td>
-					</tr>
-					<tr>
-						<td>操作</td>
-						<td>
-							<button class="btn btn-primary btn-sm">发证</button>
-							<button class="btn btn-outline-primary btn-sm">下载</button>
-						</td>
-					</tr>
-				</table>
+				<div class="col-md-6">
+					<table class="table table-striped" width="100%">
+						<tr>
+							<td>证书编号</td>
+							<td>
+								<div id="certificateno" style="display: none;"><strong>CQCJKJZ2020060101</strong></div>
+								<button onclick="showNo()" class="btn btn-primary btn-sm">生成编号</button>
+							</td>
+						</tr>
+						<tr>
+							<td>证书等级</td>
+							<td>
+								<select class="custom-select d-block w-100" id="">
+									<option value="">请选择...</option>
+									<option value="">一级</option>
+									<option value="">二级</option>
+									<option value="">三级</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>证书有效期</td>
+							<td style="text-align: center">
+								<input type="datetime" size="10" class="form-control">至
+								<input type="datetime" size="10" class="form-control">
+							</td>
+						</tr>
+						<tr>
+							<td>操作</td>
+							<td>
+								<button class="btn btn-primary btn-sm">发证</button>
+								<button class="btn btn-outline-primary btn-sm">下载</button>
+							</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
 
 
 
-<script type="text/javascript">
-function showNo(){
-	$("#certificateno").show("fast");
-}
-</script>
+	<script type="text/javascript">
+	function showNo(){
+		$("#certificateno").show("fast");
+	}
+
+
+
+	function showIndoor(){
+		$("#indoor").show("normal");
+		$("#outdoor, #surrounding, #resource, #environment, #economy").hide("");
+	}
+	function showOutdoor(){
+		$("#outdoor").show("normal");
+		$("#indoor, #surrounding, #resource, #environment, #economy").hide("");
+	}
+	function showSurrounding(){
+		$("#surrounding").show("normal");
+		$("#indoor, #outdoor, #resource, #environment, #economy").hide("");
+	}
+	function showResource(){
+		$("#resource").show("normal");
+		$("#indoor, #surrounding, #outdoor, #environment, #economy").hide("");
+	}
+	function showEnvironment(){
+		$("#environment").show("normal");
+		$("#indoor, #surrounding, #resource, #outdoor, #economy").hide("");
+	}
+	function showEconomy(){
+		$("#economy").show("normal");
+		$("#indoor, #surrounding, #resource, #environment, #outdoor").hide("");
+	}
+	</script>
