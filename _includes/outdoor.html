@@ -1,15 +1,197 @@
-<ul>
-	<h5>室外声光热空气</h5>
-	<li>场地环境噪声值</li>
-	<li>良好的室外空气质量</li>
-	<li>室外照明时长及清晰度</li>
-	<li>室外照明光源显色指数</li>
-	<li>室外公共活动区域眩光值</li>
-</ul>
+<h5><center>室外声光热空气</center></h5>
+<div class="accordion" id="outair">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#outairOne" aria-expanded="false" aria-controls="collapseOne">
+					场地环境噪声值
+				</button>
+			</h2>
+		</div>
+		<div id="outairOne" class="collapse" aria-labelledby="headingOne" data-parent="#outair">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>场地环境等效A声级</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 
-<ul>
-	<h5>绿化</h5>
-	<li>绿地率</li>
-	<li>植物种类（无害植物）</li>
-	<li>生物多样性-综合物种指数</li>
-</ul>
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#outairTwo" aria-expanded="false" aria-controls="collapseTwo">
+					良好的室外空气质量
+				</button>
+			</h2>
+		</div>
+		<div id="outairTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#outair">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>室外PM2.5浓度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#outairThree" aria-expanded="false" aria-controls="collapseThree">
+					室外照明时长及清晰度
+				</button>
+			</h2>
+		</div>
+		<div id="outairThree" class="collapse" aria-labelledby="headingThree" data-parent="#outair">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>照明时长及清晰度报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingFour">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#outairFour" aria-expanded="false" aria-controls="collapseFour">
+					室外照明光源显色指数
+				</button>
+			</h2>
+		</div>
+		<div id="outairFour" class="collapse" aria-labelledby="headingFour" data-parent="#outair">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>室外照明光源显色指数</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingFive">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#outairFive" aria-expanded="false" aria-controls="collapseFive">
+					室外公共活动区域眩光值
+				</button>
+			</h2>
+		</div>
+		<div id="outairFive" class="collapse" aria-labelledby="headingFive" data-parent="#outair">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>室外公共活动区域眩光值</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>绿化</center></h5>
+<div class="accordion" id="green">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#greenOne" aria-expanded="false" aria-controls="collapseOne">
+					绿地率
+				</button>
+			</h2>
+		</div>
+		<div id="greenOne" class="collapse" aria-labelledby="headingOne" data-parent="#green">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>绿化设计文件</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+					<tr>
+						<td>绿地率</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#greenTwo" aria-expanded="false" aria-controls="collapseTwo">
+					植物种类（无害植物）
+				</button>
+			</h2>
+		</div>
+		<div id="greenTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#green">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>景观设计文件</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+					<tr>
+						<td>植物种类</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#greenThree" aria-expanded="false" aria-controls="collapseThree">
+					生物多样性-综合物种指数
+				</button>
+			</h2>
+		</div>
+		<div id="greenThree" class="collapse" aria-labelledby="headingThree" data-parent="#green">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>综合物种指数</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

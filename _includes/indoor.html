@@ -1,36 +1,400 @@
-<ul>
-	<h5>空气</h5>
-	<li>建筑室内空气中甲醛/TVOC/苯系物等典型污染物浓度</li>
-	<li>室内颗粒物浓度</li>
-	<li>室内空气中CO2日均浓度</li>
-	<li>年均氡浓度</li>
-	<li>地下车库中CO浓度</li>
-	<li>装饰装修材料满足有害物质限量</li>
-</ul>
+<h5><center>空气</center></h5>
+<div class="accordion" id="air">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#airOne" aria-expanded="false" aria-controls="collapseOne">
+					建筑室内空气中甲醛/TVOC/苯系物等典型污染物浓度
+				</button>
+			</h2>
+		</div>
+		<div id="airOne" class="collapse" aria-labelledby="headingOne" data-parent="#air">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>甲醛</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+					<tr>
+						<td>TVOC</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+					<tr>
+						<td>苯系物</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 
-<ul>
-	<h5>水</h5>
-	<li>生活饮用水水质达标：总硬度/菌落总数</li>
-	<li>非传统水源及设备用水的水质达标</li>
-	<li>集中生活热水水温达标</li>
-</ul>
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#airTwo" aria-expanded="false" aria-controls="collapseTwo">
+					室内颗粒物浓度
+				</button>
+			</h2>
+		</div>
+		<div id="airTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#air">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>室内颗粒物浓度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 
-<ul>
-	<h5>热湿</h5>
-	<li>室内温度</li>
-	<li>室内湿度</li>
-	<li>吹风感</li>
-</ul>
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#airThree" aria-expanded="false" aria-controls="collapseThree">
+					室内空气中CO2日均浓度
+				</button>
+			</h2>
+		</div>
+		<div id="airThree" class="collapse" aria-labelledby="headingThree" data-parent="#air">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>CO2日均浓度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 
-<ul>
-	<h5>光</h5>
-	<li>日照长度</li>
-	<li>采光系统颜色透射指数</li>
-	<li>室内生理等效照度</li>
-</ul>
+	<div class="card">
+		<div class="card-header" id="headingFour">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#airFour" aria-expanded="false" aria-controls="collapseFour">
+					年均氡浓度
+				</button>
+			</h2>
+		</div>
+		<div id="airFour" class="collapse" aria-labelledby="headingFour" data-parent="#air">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>年均氡浓度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 
-<ul>
-	<h5>声</h5>
-	<li>室内噪声等级</li>
-	<li>室内隔声效果</li>
-</ul>
+	<div class="card">
+		<div class="card-header" id="headingFive">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#airFive" aria-expanded="false" aria-controls="collapseFive">
+					地下车库中CO浓度
+				</button>
+			</h2>
+		</div>
+		<div id="airFive" class="collapse" aria-labelledby="headingFive" data-parent="#air">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>地下车库CO浓度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingSix">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#airSix" aria-expanded="false" aria-controls="collapseSix">
+					装饰装修材料满足有害物质限量
+				</button>
+			</h2>
+		</div>
+		<div id="airSix" class="collapse" aria-labelledby="headingSix" data-parent="#air">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>装饰装修材料有害物质浓度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>水</center></h5>
+<div class="accordion" id="water">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#waterOne" aria-expanded="false" aria-controls="collapseOne">
+					生活饮用水水质达标：总硬度/菌落总数
+				</button>
+			</h2>
+		</div>
+		<div id="waterOne" class="collapse" aria-labelledby="headingOne" data-parent="#water">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>水质检测报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#waterTwo" aria-expanded="false" aria-controls="collapseTwo">
+					非传统水源及设备用水的水质达标
+				</button>
+			</h2>
+		</div>
+		<div id="waterTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#water">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>水质检测报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#waterThree" aria-expanded="false" aria-controls="collapseThree">
+					集中生活热水水温达标
+				</button>
+			</h2>
+		</div>
+		<div id="waterThree" class="collapse" aria-labelledby="headingThree" data-parent="#water">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>集中生活热水温度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>热湿</center></h5>
+<div class="accordion" id="thermal">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#thermalOne" aria-expanded="false" aria-controls="collapseOne">
+					室内温度
+				</button>
+			</h2>
+		</div>
+		<div id="thermalOne" class="collapse" aria-labelledby="headingOne" data-parent="#thermal">
+			<div class="card-body">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#thermalTwo" aria-expanded="false" aria-controls="collapseTwo">
+					室内湿度
+				</button>
+			</h2>
+		</div>
+		<div id="thermalTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#thermal">
+			<div class="card-body">
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#thermalThree" aria-expanded="false" aria-controls="collapseThree">
+					吹风感
+				</button>
+			</h2>
+		</div>
+		<div id="thermalThree" class="collapse" aria-labelledby="headingThree" data-parent="#thermal">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>工作区风速</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>光</center></h5>
+<div class="accordion" id="accoustic">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#accousticOne" aria-expanded="false" aria-controls="collapseOne">
+					日照长度
+				</button>
+			</h2>
+		</div>
+		<div id="accousticOne" class="collapse" aria-labelledby="headingOne" data-parent="#accoustic">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>日照长度报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#accousticTwo" aria-expanded="false" aria-controls="collapseTwo">
+					采光系统颜色透射指数
+				</button>
+			</h2>
+		</div>
+		<div id="accousticTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accoustic">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>透射指数报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#accousticThree" aria-expanded="false" aria-controls="collapseThree">
+					室内生理等效照度
+				</button>
+			</h2>
+		</div>
+		<div id="accousticThree" class="collapse" aria-labelledby="headingThree" data-parent="#accoustic">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>室内生理等效照度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>声</center></h5>
+<div class="accordion" id="lighting">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#lightingOne" aria-expanded="false" aria-controls="collapseOne">
+					室内噪声等级
+				</button>
+			</h2>
+		</div>
+		<div id="lightingOne" class="collapse" aria-labelledby="headingOne" data-parent="#lighting">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>室内等效A声级</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#lightingTwo" aria-expanded="false" aria-controls="collapseTwo">
+					室内隔声效果
+				</button>
+			</h2>
+		</div>
+		<div id="lightingTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#lighting">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>材料隔音报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

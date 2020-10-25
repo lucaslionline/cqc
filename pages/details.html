@@ -147,47 +147,10 @@ title: "健康建筑示例"
 		<table style="width:100%">
 			<tr>
 				<td class="criteria-level1">
-					<ul>
-						<li class="icon-nav" onclick="showIndoor()">
-							<div class="img-thumbnail center bg-light">
-								<h2><i data-feather="thermometer"></i></h2>
-								<h6>室内环境质量</h6>
-							</div>
-						</li>
-						<li class="icon-nav" onclick="showOutdoor()">
-							<div class="img-thumbnail center bg-light">
-								<h2><i data-feather="sun"></i></h2>
-								<h6>室外环境质量</h6>
-							</div>
-						</li>
-						<li class="icon-nav" onclick="showSurrounding()">
-							<div class="img-thumbnail center bg-light">
-								<h2><i data-feather="share-2"></i></h2>
-								<h6>周边生活配套</h6>
-							</div>
-						</li>
-						<li class="icon-nav" onclick="showResource()">
-							<div class="img-thumbnail center bg-light">
-								<h2><i data-feather="command"></i></h2>
-								<h6>资源利用</h6>
-							</div>
-						</li>
-						<li class="icon-nav" onclick="showEnvironment()">
-							<div class="img-thumbnail center bg-light">
-								<h2><i data-feather="feather"></i></h2>
-								<h6>环境生态保护</h6>
-							</div>
-						</li>
-						<li class="icon-nav" onclick="showEconomy()">
-							<div class="img-thumbnail center bg-light">
-								<h2><i data-feather="dollar-sign"></i></h2>
-								<h6>经济性</h6>
-							</div>
-						</li>
-					</ul>
+					{% include criteria-nav.html %}
 				</td>
 
-				<td style="vertical-align: top">
+				<td style="vertical-align: top; padding-left: 1.5rem;">
 					<div id="indoor" style="display: none">
 						{% include indoor.html %}
 					</div>

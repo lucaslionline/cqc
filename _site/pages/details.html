@@ -226,190 +226,1664 @@
 			<tr>
 				<td class="criteria-level1">
 					<ul>
-						<li class="icon-nav" onclick="showIndoor()">
-							<div class="img-thumbnail center bg-light">
-								<h2><i data-feather="thermometer"></i></h2>
-								<h6>室内环境质量</h6>
-							</div>
-						</li>
-						<li class="icon-nav" onclick="showOutdoor()">
-							<div class="img-thumbnail center bg-light">
-								<h2><i data-feather="sun"></i></h2>
-								<h6>室外环境质量</h6>
-							</div>
-						</li>
-						<li class="icon-nav" onclick="showSurrounding()">
-							<div class="img-thumbnail center bg-light">
-								<h2><i data-feather="share-2"></i></h2>
-								<h6>周边生活配套</h6>
-							</div>
-						</li>
-						<li class="icon-nav" onclick="showResource()">
-							<div class="img-thumbnail center bg-light">
-								<h2><i data-feather="command"></i></h2>
-								<h6>资源利用</h6>
-							</div>
-						</li>
-						<li class="icon-nav" onclick="showEnvironment()">
-							<div class="img-thumbnail center bg-light">
-								<h2><i data-feather="feather"></i></h2>
-								<h6>环境生态保护</h6>
-							</div>
-						</li>
-						<li class="icon-nav" onclick="showEconomy()">
-							<div class="img-thumbnail center bg-light">
-								<h2><i data-feather="dollar-sign"></i></h2>
-								<h6>经济性</h6>
-							</div>
-						</li>
-					</ul>
+	<li class="icon-nav" onclick="showIndoor()">
+		<div class="img-thumbnail center bg-light">
+			<h2><i data-feather="thermometer"></i></h2>
+			<h6>室内环境质量</h6>
+		</div>
+	</li>
+	<li class="icon-nav" onclick="showOutdoor()">
+		<div class="img-thumbnail center bg-light">
+			<h2><i data-feather="sun"></i></h2>
+			<h6>室外环境质量</h6>
+		</div>
+	</li>
+	<li class="icon-nav" onclick="showSurrounding()">
+		<div class="img-thumbnail center bg-light">
+			<h2><i data-feather="share-2"></i></h2>
+			<h6>周边生活配套</h6>
+		</div>
+	</li>
+	<li class="icon-nav" onclick="showResource()">
+		<div class="img-thumbnail center bg-light">
+			<h2><i data-feather="command"></i></h2>
+			<h6>资源利用</h6>
+		</div>
+	</li>
+	<li class="icon-nav" onclick="showEnvironment()">
+		<div class="img-thumbnail center bg-light">
+			<h2><i data-feather="feather"></i></h2>
+			<h6>环境生态保护</h6>
+		</div>
+	</li>
+	<li class="icon-nav" onclick="showEconomy()">
+		<div class="img-thumbnail center bg-light">
+			<h2><i data-feather="dollar-sign"></i></h2>
+			<h6>经济性</h6>
+		</div>
+	</li>
+</ul>
 				</td>
 
-				<td style="vertical-align: top">
+				<td style="vertical-align: top; padding-left: 1.5rem;">
 					<div id="indoor" style="display: none">
-						<ul>
-	<h5>空气</h5>
-	<li>建筑室内空气中甲醛/TVOC/苯系物等典型污染物浓度</li>
-	<li>室内颗粒物浓度</li>
-	<li>室内空气中CO2日均浓度</li>
-	<li>年均氡浓度</li>
-	<li>地下车库中CO浓度</li>
-	<li>装饰装修材料满足有害物质限量</li>
-</ul>
+						<h5><center>空气</center></h5>
+<div class="accordion" id="air">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#airOne" aria-expanded="false" aria-controls="collapseOne">
+					建筑室内空气中甲醛/TVOC/苯系物等典型污染物浓度
+				</button>
+			</h2>
+		</div>
+		<div id="airOne" class="collapse" aria-labelledby="headingOne" data-parent="#air">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>甲醛</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+					<tr>
+						<td>TVOC</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+					<tr>
+						<td>苯系物</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 
-<ul>
-	<h5>水</h5>
-	<li>生活饮用水水质达标：总硬度/菌落总数</li>
-	<li>非传统水源及设备用水的水质达标</li>
-	<li>集中生活热水水温达标</li>
-</ul>
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#airTwo" aria-expanded="false" aria-controls="collapseTwo">
+					室内颗粒物浓度
+				</button>
+			</h2>
+		</div>
+		<div id="airTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#air">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>室内颗粒物浓度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 
-<ul>
-	<h5>热湿</h5>
-	<li>室内温度</li>
-	<li>室内湿度</li>
-	<li>吹风感</li>
-</ul>
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#airThree" aria-expanded="false" aria-controls="collapseThree">
+					室内空气中CO2日均浓度
+				</button>
+			</h2>
+		</div>
+		<div id="airThree" class="collapse" aria-labelledby="headingThree" data-parent="#air">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>CO2日均浓度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 
-<ul>
-	<h5>光</h5>
-	<li>日照长度</li>
-	<li>采光系统颜色透射指数</li>
-	<li>室内生理等效照度</li>
-</ul>
+	<div class="card">
+		<div class="card-header" id="headingFour">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#airFour" aria-expanded="false" aria-controls="collapseFour">
+					年均氡浓度
+				</button>
+			</h2>
+		</div>
+		<div id="airFour" class="collapse" aria-labelledby="headingFour" data-parent="#air">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>年均氡浓度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 
-<ul>
-	<h5>声</h5>
-	<li>室内噪声等级</li>
-	<li>室内隔声效果</li>
-</ul>
+	<div class="card">
+		<div class="card-header" id="headingFive">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#airFive" aria-expanded="false" aria-controls="collapseFive">
+					地下车库中CO浓度
+				</button>
+			</h2>
+		</div>
+		<div id="airFive" class="collapse" aria-labelledby="headingFive" data-parent="#air">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>地下车库CO浓度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingSix">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#airSix" aria-expanded="false" aria-controls="collapseSix">
+					装饰装修材料满足有害物质限量
+				</button>
+			</h2>
+		</div>
+		<div id="airSix" class="collapse" aria-labelledby="headingSix" data-parent="#air">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>装饰装修材料有害物质浓度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>水</center></h5>
+<div class="accordion" id="water">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#waterOne" aria-expanded="false" aria-controls="collapseOne">
+					生活饮用水水质达标：总硬度/菌落总数
+				</button>
+			</h2>
+		</div>
+		<div id="waterOne" class="collapse" aria-labelledby="headingOne" data-parent="#water">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>水质检测报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#waterTwo" aria-expanded="false" aria-controls="collapseTwo">
+					非传统水源及设备用水的水质达标
+				</button>
+			</h2>
+		</div>
+		<div id="waterTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#water">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>水质检测报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#waterThree" aria-expanded="false" aria-controls="collapseThree">
+					集中生活热水水温达标
+				</button>
+			</h2>
+		</div>
+		<div id="waterThree" class="collapse" aria-labelledby="headingThree" data-parent="#water">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>集中生活热水温度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>热湿</center></h5>
+<div class="accordion" id="thermal">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#thermalOne" aria-expanded="false" aria-controls="collapseOne">
+					室内温度
+				</button>
+			</h2>
+		</div>
+		<div id="thermalOne" class="collapse" aria-labelledby="headingOne" data-parent="#thermal">
+			<div class="card-body">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#thermalTwo" aria-expanded="false" aria-controls="collapseTwo">
+					室内湿度
+				</button>
+			</h2>
+		</div>
+		<div id="thermalTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#thermal">
+			<div class="card-body">
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#thermalThree" aria-expanded="false" aria-controls="collapseThree">
+					吹风感
+				</button>
+			</h2>
+		</div>
+		<div id="thermalThree" class="collapse" aria-labelledby="headingThree" data-parent="#thermal">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>工作区风速</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>光</center></h5>
+<div class="accordion" id="accoustic">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#accousticOne" aria-expanded="false" aria-controls="collapseOne">
+					日照长度
+				</button>
+			</h2>
+		</div>
+		<div id="accousticOne" class="collapse" aria-labelledby="headingOne" data-parent="#accoustic">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>日照长度报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#accousticTwo" aria-expanded="false" aria-controls="collapseTwo">
+					采光系统颜色透射指数
+				</button>
+			</h2>
+		</div>
+		<div id="accousticTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accoustic">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>透射指数报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#accousticThree" aria-expanded="false" aria-controls="collapseThree">
+					室内生理等效照度
+				</button>
+			</h2>
+		</div>
+		<div id="accousticThree" class="collapse" aria-labelledby="headingThree" data-parent="#accoustic">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>室内生理等效照度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>声</center></h5>
+<div class="accordion" id="lighting">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#lightingOne" aria-expanded="false" aria-controls="collapseOne">
+					室内噪声等级
+				</button>
+			</h2>
+		</div>
+		<div id="lightingOne" class="collapse" aria-labelledby="headingOne" data-parent="#lighting">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>室内等效A声级</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#lightingTwo" aria-expanded="false" aria-controls="collapseTwo">
+					室内隔声效果
+				</button>
+			</h2>
+		</div>
+		<div id="lightingTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#lighting">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>材料隔音报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
 					</div>
 					<div id="outdoor" style="display: none">
-						<ul>
-	<h5>室外声光热空气</h5>
-	<li>场地环境噪声值</li>
-	<li>良好的室外空气质量</li>
-	<li>室外照明时长及清晰度</li>
-	<li>室外照明光源显色指数</li>
-	<li>室外公共活动区域眩光值</li>
-</ul>
+						<h5><center>室外声光热空气</center></h5>
+<div class="accordion" id="outair">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#outairOne" aria-expanded="false" aria-controls="collapseOne">
+					场地环境噪声值
+				</button>
+			</h2>
+		</div>
+		<div id="outairOne" class="collapse" aria-labelledby="headingOne" data-parent="#outair">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>场地环境等效A声级</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 
-<ul>
-	<h5>绿化</h5>
-	<li>绿地率</li>
-	<li>植物种类（无害植物）</li>
-	<li>生物多样性-综合物种指数</li>
-</ul>
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#outairTwo" aria-expanded="false" aria-controls="collapseTwo">
+					良好的室外空气质量
+				</button>
+			</h2>
+		</div>
+		<div id="outairTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#outair">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>室外PM2.5浓度</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#outairThree" aria-expanded="false" aria-controls="collapseThree">
+					室外照明时长及清晰度
+				</button>
+			</h2>
+		</div>
+		<div id="outairThree" class="collapse" aria-labelledby="headingThree" data-parent="#outair">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>照明时长及清晰度报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingFour">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#outairFour" aria-expanded="false" aria-controls="collapseFour">
+					室外照明光源显色指数
+				</button>
+			</h2>
+		</div>
+		<div id="outairFour" class="collapse" aria-labelledby="headingFour" data-parent="#outair">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>室外照明光源显色指数</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingFive">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#outairFive" aria-expanded="false" aria-controls="collapseFive">
+					室外公共活动区域眩光值
+				</button>
+			</h2>
+		</div>
+		<div id="outairFive" class="collapse" aria-labelledby="headingFive" data-parent="#outair">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>室外公共活动区域眩光值</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>绿化</center></h5>
+<div class="accordion" id="green">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#greenOne" aria-expanded="false" aria-controls="collapseOne">
+					绿地率
+				</button>
+			</h2>
+		</div>
+		<div id="greenOne" class="collapse" aria-labelledby="headingOne" data-parent="#green">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>绿化设计文件</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+					<tr>
+						<td>绿地率</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#greenTwo" aria-expanded="false" aria-controls="collapseTwo">
+					植物种类（无害植物）
+				</button>
+			</h2>
+		</div>
+		<div id="greenTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#green">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>景观设计文件</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+					<tr>
+						<td>植物种类</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#greenThree" aria-expanded="false" aria-controls="collapseThree">
+					生物多样性-综合物种指数
+				</button>
+			</h2>
+		</div>
+		<div id="greenThree" class="collapse" aria-labelledby="headingThree" data-parent="#green">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>综合物种指数</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
 					</div>
 					<div id="surrounding" style="display: none">
-						<ul>
-	<h5>健身</h5>
-	<li>健身场地和空间面积比</li>
-</ul>
+						<h5><center>健身</center></h5>
+<div class="accordion" id="fitness">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#fitnessOne" aria-expanded="false" aria-controls="collapseOne">
+					健身场地和空间面积比
+				</button>
+			</h2>
+		</div>
+		<div id="fitnessOne" class="collapse" aria-labelledby="headingOne" data-parent="#fitness">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>健身场地和空间面积比</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
 
-<ul>
-	<h5>交通便利</h5>
-	<li>场地与公共交通站点距离及站点数</li>
-	<li>开敞空间步行可达</li>
-	<li>机械式停车设施、地下停车库或地面停车楼等方式</li>
-	<li>电动汽车充电设施及停车位，无障碍汽车停车位</li>
-	<li>车位数与住户比</li>
-	<li>自行车停车场位置及停车位数量</li>
-</ul>
 
-<ul>
-	<h5>适老及无障碍</h5>
-	<li>室内外公共区域全龄化设计</li>
-	<li>建筑内适老设施种类及数量</li>
-	<li>无障碍步行系统</li>
-	<li>室内报警设施位置及数量</li>
-	<li>可以容纳担架的电梯数量</li>
-</ul>
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>交通便利</center></h5>
+<div class="accordion" id="traffic">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#trafficOne" aria-expanded="false" aria-controls="collapseOne">
+					场地与公共交通站点距离及站点数
+				</button>
+			</h2>
+		</div>
+		<div id="trafficOne" class="collapse" aria-labelledby="headingOne" data-parent="#traffic">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>场地与公共交通站点距离及站点数报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 
-<ul>
-	<h5>社区文化营造</h5>
-	<li>绿色出行率</li>
-	<li>民族建筑文化因素</li>
-	<li>社区文化建设</li>
-	<li>绿色生活教育</li>
-	<li>邻里居民文化活动组织</li>
-</ul>
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#trafficTwo" aria-expanded="false" aria-controls="collapseTwo">
+					开敞空间步行可达
+				</button>
+			</h2>
+		</div>
+		<div id="trafficTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#traffic">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>开敞空间步行可达报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#trafficThree" aria-expanded="false" aria-controls="collapseThree">
+					机械式停车设施、地下停车库或地面停车楼等方式
+				</button>
+			</h2>
+		</div>
+		<div id="trafficThree" class="collapse" aria-labelledby="headingThree" data-parent="#traffic">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>停车方式报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingFour">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#trafficFour" aria-expanded="false" aria-controls="collapseFour">
+					电动汽车充电设施及停车位，无障碍汽车停车位
+				</button>
+			</h2>
+		</div>
+		<div id="trafficFour" class="collapse" aria-labelledby="headingFour" data-parent="#traffic">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>电动汽车及无障碍汽车停车位报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingFive">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#trafficFive" aria-expanded="false" aria-controls="collapseFive">
+					车位数与住户比
+				</button>
+			</h2>
+		</div>
+		<div id="trafficFive" class="collapse" aria-labelledby="headingFive" data-parent="#traffic">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>车位数与住户比</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingSix">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#trafficSix" aria-expanded="false" aria-controls="collapseSix">
+					自行车停车场位置及停车位数量
+				</button>
+			</h2>
+		</div>
+		<div id="trafficSix" class="collapse" aria-labelledby="headingSix" data-parent="#traffic">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>自行车停车场位置及停车位数量报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>适老及无障碍</center></h5>
+<div class="accordion" id="old">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#oldOne" aria-expanded="false" aria-controls="collapseOne">
+					室内外公共区域全龄化设计
+				</button>
+			</h2>
+		</div>
+		<div id="oldOne" class="collapse" aria-labelledby="headingOne" data-parent="#old">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>公共区域全龄化设计报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#oldTwo" aria-expanded="false" aria-controls="collapseTwo">
+					建筑内适老设施种类及数量
+				</button>
+			</h2>
+		</div>
+		<div id="oldTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#old">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>适老设施种类及数量报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#oldThree" aria-expanded="false" aria-controls="collapseThree">
+					无障碍步行系统
+				</button>
+			</h2>
+		</div>
+		<div id="oldThree" class="collapse" aria-labelledby="headingThree" data-parent="#old">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>无障碍步行系统报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingFour">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#oldFour" aria-expanded="false" aria-controls="collapseFour">
+					室内报警设施位置及数量
+				</button>
+			</h2>
+		</div>
+		<div id="oldFour" class="collapse" aria-labelledby="headingFour" data-parent="#old">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>室内报警设施位置及数量报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingFive">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#oldFive" aria-expanded="false" aria-controls="collapseFive">
+					可以容纳担架的电梯数量
+				</button>
+			</h2>
+		</div>
+		<div id="oldFive" class="collapse" aria-labelledby="headingFive" data-parent="#old">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>可以容纳担架的电梯数量报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>社区文化营造</center></h5>
+<div class="accordion" id="community">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#communityOne" aria-expanded="false" aria-controls="collapseOne">
+					绿色出行率
+				</button>
+			</h2>
+		</div>
+		<div id="communityOne" class="collapse" aria-labelledby="headingOne" data-parent="#community">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>绿色出行率报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#communityTwo" aria-expanded="false" aria-controls="collapseTwo">
+					民族建筑文化因素
+				</button>
+			</h2>
+		</div>
+		<div id="communityTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#community">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>民族建筑文化因素报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#communityThree" aria-expanded="false" aria-controls="collapseThree">
+					社区文化建设
+				</button>
+			</h2>
+		</div>
+		<div id="communityThree" class="collapse" aria-labelledby="headingThree" data-parent="#community">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>社区文化建设报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="card">
+		<div class="card-header" id="headingFour">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#communityFour" aria-expanded="false" aria-controls="collapseFour">
+					绿色生活教育
+				</button>
+			</h2>
+		</div>
+		<div id="communityFour" class="collapse" aria-labelledby="headingFour" data-parent="#community">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>绿色生活教育报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingFive">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#communityFive" aria-expanded="false" aria-controls="collapseFive">
+					邻里居民文化活动组织
+				</button>
+			</h2>
+		</div>
+		<div id="communityFive" class="collapse" aria-labelledby="headingFive" data-parent="#community">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>邻里居民文化活动组织报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
 					</div>
 					<div id="resource" style="display: none">
-						<ul>
-	<h5>能源利用</h5>
-	<li>建筑单位能耗</li>
-	<li>可再生能源利用率</li>
-</ul>
+						<h5><center>能源利用</center></h5>
+<div class="accordion" id="energy">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#energyOne" aria-expanded="false" aria-controls="collapseOne">
+					建筑单位能耗
+				</button>
+			</h2>
+		</div>
+		<div id="energyOne" class="collapse" aria-labelledby="headingOne" data-parent="#energy">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>健身场地和空间面积比</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 
-<ul>
-	<h5>水资源利用</h5>
-	<li>建筑单位水耗</li>
-	<li>非传统水源利用率</li>
-</ul>
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#energyTwo" aria-expanded="false" aria-controls="collapseTwo">
+					可再生能源利用率
+				</button>
+			</h2>
+		</div>
+		<div id="energyTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#energy">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>健身场地和空间面积比</td>
+						<td><input type="text" class="form-control" id="" placeholder="检测值" value=""></td>
+						<td><input type="text" class="form-control" id="" placeholder="检测员" value=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
 
-<ul>
-	<h5>土地资源利用</h5>
-	<li>容积率</li>
-	<li>保护本地物种</li>
-</ul>
 
-<ul>
-	<h5>材料资源利用</h5>
-	<li>本地建材使用量</li>
-	<li>绿色建材利用率</li>
-</ul>
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>水资源利用</center></h5>
+<div class="accordion" id="h2o">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#h2oOne" aria-expanded="false" aria-controls="collapseOne">
+					建筑单位水耗
+				</button>
+			</h2>
+		</div>
+		<div id="h2oOne" class="collapse" aria-labelledby="headingOne" data-parent="#h2o">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>场地与公共交通站点距离及站点数报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#h2oTwo" aria-expanded="false" aria-controls="collapseTwo">
+					非传统水源利用率
+				</button>
+			</h2>
+		</div>
+		<div id="h2oTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#h2o">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>开敞空间步行可达报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>土地资源利用</center></h5>
+<div class="accordion" id="land">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#landOne" aria-expanded="false" aria-controls="collapseOne">
+					容积率
+				</button>
+			</h2>
+		</div>
+		<div id="landOne" class="collapse" aria-labelledby="headingOne" data-parent="#land">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>公共区域全龄化设计报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#landTwo" aria-expanded="false" aria-controls="collapseTwo">
+					保护本地物种
+				</button>
+			</h2>
+		</div>
+		<div id="landTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#land">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>适老设施种类及数量报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>材料资源利用</center></h5>
+<div class="accordion" id="material">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#materialOne" aria-expanded="false" aria-controls="collapseOne">
+					本地建材使用量
+				</button>
+			</h2>
+		</div>
+		<div id="materialOne" class="collapse" aria-labelledby="headingOne" data-parent="#material">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>绿色出行率报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#materialTwo" aria-expanded="false" aria-controls="collapseTwo">
+					绿色建材利用率
+				</button>
+			</h2>
+		</div>
+		<div id="materialTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#material">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>民族建筑文化因素报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
 					</div>
 					<div id="environment" style="display: none">
-						<ul>
-	<li>碳排放</li>
-	<li>热岛强度</li>
-	<li>废水处理率</li>
-	<li>生活垃圾分类回收率</li>
-	<li>建筑垃圾产生量及处理情况</li>
-	<li>与当地风貌结合程度</li>
-</ul>
+						<h5><center>环境生态保护</center></h5>
+<div class="accordion" id="envir">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#envirOne" aria-expanded="false" aria-controls="collapseOne">
+					碳排放
+				</button>
+			</h2>
+		</div>
+		<div id="envirOne" class="collapse" aria-labelledby="headingOne" data-parent="#envir">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>碳排放报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#envirTwo" aria-expanded="false" aria-controls="collapseTwo">
+					热岛强度
+				</button>
+			</h2>
+		</div>
+		<div id="envirTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#envir">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>热岛强度报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#envirThree" aria-expanded="false" aria-controls="collapseThree">
+					废水处理率
+				</button>
+			</h2>
+		</div>
+		<div id="envirThree" class="collapse" aria-labelledby="headingThree" data-parent="#envir">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>废水处理率报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingFour">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#envirFour" aria-expanded="false" aria-controls="collapseFour">
+					生活垃圾分类回收率
+				</button>
+			</h2>
+		</div>
+		<div id="envirFour" class="collapse" aria-labelledby="headingFour" data-parent="#envir">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>生活垃圾分类回收率报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingFive">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#envirFive" aria-expanded="false" aria-controls="collapseFive">
+					建筑垃圾产生量及处理情况
+				</button>
+			</h2>
+		</div>
+		<div id="envirFive" class="collapse" aria-labelledby="headingFive" data-parent="#envir">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>建筑垃圾产生量及处理报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingSix">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#envirSix" aria-expanded="false" aria-controls="collapseSix">
+					与当地风貌结合程度
+				</button>
+			</h2>
+		</div>
+		<div id="envirSix" class="collapse" aria-labelledby="headingSix" data-parent="#envir">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>与当地风貌结合程度报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
 					</div>
 					<div id="economy" style="display: none">
-						<ul>
-	<h5>开发设计成本</h5>
-	<li>全寿命期预算</li>
-	<li>绿色金融：绿色保险机制</li>
-</ul>
+						<h5><center>开发设计成本</center></h5>
+<div class="accordion" id="design">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#designOne" aria-expanded="false" aria-controls="collapseOne">
+					全寿命期预算
+				</button>
+			</h2>
+		</div>
+		<div id="designOne" class="collapse" aria-labelledby="headingOne" data-parent="#design">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>全寿命期预算报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 
-<ul>
-	<h5>建设成本</h5>
-	<li>单位建造成本</li>
-	<li>单位增量成本</li>
-</ul>
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#designTwo" aria-expanded="false" aria-controls="collapseTwo">
+					绿色金融：绿色保险机制
+				</button>
+			</h2>
+		</div>
+		<div id="designTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#design">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>绿色保险机制报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
 
-<ul>
-	<h5>运行成本</h5>
-	<li>出租率</li>
-	<li>入住率</li>
-	<li>单位运行成本</li>
-	<li>单位面积租金</li>
-</ul>
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>建设成本</center></h5>
+<div class="accordion" id="construction">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#constructionOne" aria-expanded="false" aria-controls="collapseOne">
+					单位建造成本
+				</button>
+			</h2>
+		</div>
+		<div id="constructionOne" class="collapse" aria-labelledby="headingOne" data-parent="#construction">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>单位建造成本报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#constructionTwo" aria-expanded="false" aria-controls="collapseTwo">
+					单位增量成本
+				</button>
+			</h2>
+		</div>
+		<div id="constructionTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#construction">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>单位增量成本报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--=================================================-->
+<h5 style="margin-top: 2rem;"><center>运行成本</center></h5>
+<div class="accordion" id="operation">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#operationOne" aria-expanded="false" aria-controls="collapseOne">
+					出租率
+				</button>
+			</h2>
+		</div>
+		<div id="operationOne" class="collapse" aria-labelledby="headingOne" data-parent="#operation">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>出租率报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#operationTwo" aria-expanded="false" aria-controls="collapseTwo">
+					入住率
+				</button>
+			</h2>
+		</div>
+		<div id="operationTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#operation">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>入住率报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#operationThree" aria-expanded="false" aria-controls="collapseThree">
+					单位运行成本
+				</button>
+			</h2>
+		</div>
+		<div id="operationThree" class="collapse" aria-labelledby="headingThree" data-parent="#operation">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>单位运行成本报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingFour">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#operationFour" aria-expanded="false" aria-controls="collapseFour">
+					单位面积租金
+				</button>
+			</h2>
+		</div>
+		<div id="operationFour" class="collapse" aria-labelledby="headingFour" data-parent="#operation">
+			<div class="card-body">
+				<table class="table table-striped" width="100%">
+					<tr>
+						<td>单位面积租金报告</td>
+						<td><input type="file" class="form-control" id="" placeholder="" value=""></td>
+						<td>
+							<button class="btn btn-primary btn-sm">上传</button>
+							<button class="btn btn-outline-primary btn-sm">下载</button>
+							<button class="btn btn-outline-primary btn-sm">删除</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
 					</div>
 				</td>
 			</tr>
