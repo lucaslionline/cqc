@@ -52,17 +52,17 @@
 }
 
 .icon-nav a {
-	color: white;
 	text-decoration: none;
 }
 .icon-nav a:hover {
 	text-decoration: none;
 }
 .icon-nav a .img-thumbnail {
-	background-color: #007bff;
+	border: 2px dotted #007bff;
 }
 .icon-nav a .img-thumbnail:hover {
-	background-color: #0069d9;
+	background-color: #f8f9fa;
+	border: 2px dotted #dee2e6;
 }
 .icon-nav .feather {
 	height: 20px;

@@ -151,6 +151,21 @@ title: "健康建筑示例"
 				</td>
 
 				<td style="vertical-align: top; padding-left: 1.5rem;">
+
+
+					<div class="progress mb-3">
+						<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+
+					<div class="alert alert-primary">
+						<i data-feather="volume-1"></i> 
+						请按要求上传相关评审材料。（申请人）
+					</div>
+					<div class="alert alert-success">
+						<i data-feather="volume-1"></i> 
+						请完成相关指标检测或评审。（评审员）
+					</div>
+
 					<div id="indoor">
 						{% include indoor.html %}
 					</div>
@@ -289,54 +304,324 @@ title: "健康建筑示例"
 		<div class="tab-pane fade" id="status" role="tabpanel" aria-labelledby="status-tab">
 			<div class="row">
 				<div class="col-md-6">
-					<table class="table table-striped" width="100%">
+					<table class="table" width="100%">
 						<tr>
-							<td>创建日期</td>
-							<td>2020-05-31</td>
+							<th>一级指标</th>
+							<th>二级指标</th>
+							<th>三级指标</th>
+							<th>得分</th>
 						</tr>
 						<tr>
-							<td>认证状态</td>
-							<td>
-								<select class="custom-select d-block w-100" id="">
-									<option>申请提交成功</option>
-									<option>申请已受理</option>
-									<option>材料提交成功</option>
-									<option>形式审查中</option>
-									<option>专家评审中</option>
-									<option>数据检测中</option>
-									<option>认证通过</option>
-									<option>认证即将过期</option>
-									<option>认证过期</option>
-								</select>
-							</td>
+							<td rowspan="19">室内环境质量</td>
+							<td rowspan="8">空气</td>
+							<td>室内甲醛浓度</td>
+							<td>0</td>
 						</tr>
 						<tr>
-							<td>形式审查</td>
-							<td>
-								<label><input type="radio" name="xingshi"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
-								<label><input type="radio" name="xingshi"> 不通过<i data-feather="x-square" class="danger"></i></label>
-							</td>
+							<td>室内TVOC浓度</td>
+							<td>0</td>
 						</tr>
 						<tr>
-							<td>专家评审</td>
-							<td>
-								<label><input type="radio" name="zhuanjia"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
-								<label><input type="radio" name="zhuanjia"> 不通过<i data-feather="x-square" class="danger"></i></label>
-							</td>
+							<td>室内苯系物浓度</td>
+							<td>0</td>
 						</tr>
 						<tr>
-							<td>数据检测</td>
-							<td>
-								<label><input type="radio" name="shuju"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
-								<label><input type="radio" name="shuju"> 不通过<i data-feather="x-square" class="danger"></i></label>
-							</td>
+							<td>室内颗粒物浓度</td>
+							<td>0</td>
 						</tr>
 						<tr>
-							<td>认证结果</td>
-							<td>
-								<label><input type="radio" name="renzheng"> 通过<i data-feather="check-square" class="success"></i></label>&nbsp;&nbsp;
-								<label><input type="radio" name="renzheng"> 不通过<i data-feather="x-square" class="danger"></i></label>
-							</td>
+							<td>室内空气中CO2日均浓度</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>年均氡浓度</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>地下车库中CO浓度</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>装饰装修材料满足有害物质限量</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="3">水</td>
+							<td>生活饮用水水质</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>非传统水源及设备用水的水质</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>集中生活热水水温</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="3">热湿</td>
+							<td>室内温度</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>室内湿度</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>吹风感</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="3">光</td>
+							<td>日照长度</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>采光系统颜色透射指数</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>室内生理等效照度</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="2">声</td>
+							<td>室内噪声等级</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>室内隔声效果</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="8">室外环境质量</td>
+							<td rowspan="5">室外声光热空气</td>
+							<td>场地环境噪声值</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>良好的室外空气质量</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>室外照明时长及清晰度</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>室外照明光源显色指数</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>室外公共活动区域眩光值</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="3">绿化</td>
+							<td>绿地率</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>植物种类</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>生物多样性</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="17">周边生活配套</td>
+							<td>健身</td>
+							<td>健身场地和空间面积比</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="6">交通便利</td>
+							<td>场地与公共交通站点距离及站点数</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>开敞空间步行可达</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>停车设施及停车方式</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>电动汽车及无障碍汽车停车位</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>车位数与住户比</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>自行车停车场位置及停车位数量</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="5">适老及无障碍</td>
+							<td>室内外公共区域全龄化设计</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>建筑内适老设施种类及数量</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>无障碍步行系统</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>室内报警设施位置及数量</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>可以容纳担架的电梯数量</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="5">社区文化营造</td>
+							<td>绿色出行率</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>民族建筑文化因素</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>社区文化建设</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>绿色生活教育</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>邻里居民文化活动组织</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="8">资源利用</td>
+							<td rowspan="2">能源利用</td>
+							<td>建筑单位能耗</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>可再生能源利用率</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="2">水资源利用</td>
+							<td>建筑单位水耗</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>非传统水源利用率</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="2">土地资源利用</td>
+							<td>容积率</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>保护本地物种</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="2">材料资源利用</td>
+							<td>本地建材使用量</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>绿色建材利用率</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="6">环境生态保护</td>
+							<td rowspan="6">环境生态保护</td>
+							<td>碳排放</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>热岛强度</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>废水处理率</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>生活垃圾分类回收率</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>建筑垃圾产生量及处理情况</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>与当地风貌结合程度</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="8">经济性</td>
+							<td rowspan="2">开发设计成本</td>
+							<td>全寿命期预算</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>绿色金融：绿色保险机制</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="2">建设成本</td>
+							<td>单位建造成本</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>单位增量成本</td>
+							<td>0</td>
+						</tr>
+
+						<tr>
+							<td rowspan="4">运行成本</td>
+							<td>出租率</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>入住率</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>单位运行成本</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>单位面积租金</td>
+							<td>0</td>
+						</tr>
+
+						<tr class="bg-primary">
+							<td colspan="3"><strong>总分</strong></td>
+							<td><strong>0</strong></td>
 						</tr>
 					</table>
 				</div>
